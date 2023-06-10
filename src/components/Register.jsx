@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import videoBg from '../images/videoBg.mp4'
+import "./Register.css"
 export const Register = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
@@ -18,6 +19,7 @@ export const Register = () => {
 
     return(
         <>
+        <div className="register">
         <div className="video-class">
         <video src={videoBg} autoPlay loop muted /></div>
         <div style={myStyle} className="auth">
@@ -37,6 +39,7 @@ export const Register = () => {
                 </script>
             </form>
             <button className="link">Already have an account? log in now</button>
+        </div>
         </div>
         </>
     )

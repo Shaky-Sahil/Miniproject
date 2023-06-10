@@ -1,31 +1,41 @@
 import React from "react"
-import videoBg from '../images/a3.jpg'
+import "./Cardone.css"
 import { Link } from "react-router-dom";
 
 export const Cardtwo = () => {
 
+    const myStyle1={
+        backgroundImage: "url('https://wallpaperaccess.com/full/5323823.jpg')",
+        height: '100vh',
+        width: '100%',
+        backgroundSize: 'cover',
+    };
+
     const myStyle={
-        backgroundImage: "url('https://i.pinimg.com/originals/c1/0c/c4/c10cc4372487c4a1e4b0c1476a3c5ea1.png')",
+        backgroundImage: "url('https://a-static.besthdwallpaper.com/green-leaves-with-black-shadow-wallpaper-2048x1536-78534_26.jpg')",
         backgroundSize: 'cover'
       };
 
     return(
         <> 
-        <div className="background-image">
-            <img src={videoBg} autoPlay loop muted />
-        </div>
+        <div style={myStyle1}></div>
+        <div className="cardone">
             <div style={myStyle} className="card">
-                <h1 className="cardonetitle">HI<br></br>
+                <h1 className="cardonetitle">Make<br></br>
+                Core Memories
                 </h1>
                 <p className="cardonepara">
                 Welcome to the future of travelling.
                 Make the most of your trip with the guidance of our app.
                 </p>
-                <button className="button1">
-                <Link style={{textDecoration:"none", color:"Black"}}to="/cardthree">Next</Link>
-                </button>
-                <Link className="button2">Skip</Link>
+                
+                <Link style={{textDecoration:"none", color:"Black"}}to="/cardthree">
+                    <button className="button1">Next</button>
+                </Link>
+                <button className="button2">Skip</button>
+            </div>
             </div>
         </>
+        
     )
 }

@@ -1,0 +1,45 @@
+*{
+   overflow: hidden;
+  }
+
+.cardone{
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+    
+    position: absolute;
+    object-fit:scale-down;
+    text-align: left;
+    color: white;
+    width: 30vh;
+    height: 45vh;
+    margin-top: 100px;
+    box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
+    padding: 5rem;
+    padding-left: 2rem;
+    margin-top: -50rem;
+    border-radius: 40px;
+  }
+
+  .cardonetitle {
+    margin-top: 150px;
+  }
+  
+  .button1{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .button2 {
+    background: none;
+    margin-left: 170px;
+    color: white;
+    position: absolute;
+    padding-left: 20px;
+  }
+  
