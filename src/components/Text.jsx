@@ -19,7 +19,7 @@ export const Text = () => {
                 .typeString("Traverse Uncharted Lands!")
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString("Journey to different locales1")
+                .typeString("Journey to different locales!")
                 .pauseFor(1000)
                 .deleteAll()
                 .start();

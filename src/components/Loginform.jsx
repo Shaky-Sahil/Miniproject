@@ -32,8 +32,7 @@ export const Loginform = () => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="Password" id="password" name="password" />
                 <button href="/login-submit" type="submmit">Login</button>
                 <button className="link">Register now</button>
-            </form>
-            
+            </form> 
             <Text />
         </div>
     </>

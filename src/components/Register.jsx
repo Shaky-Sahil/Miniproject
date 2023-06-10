@@ -31,7 +31,7 @@ export const Register = () => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="Password" id="password" name="password" />
                 <label htmlFor="confirm-password">Confirm Password:</label>
                 <input value={confirm} onChange={(e) => setConfirm(e.target.value)}type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" />
-                <button type="submit" onClick='sign'>SIGN UP</button>
+                <button type="submit">SIGN UP</button>
                 <script>
 
                 </script>

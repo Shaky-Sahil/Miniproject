@@ -1,5 +1,4 @@
 *{
-  
   overflow: hidden;
   font-family: "CustomFont";
 }
@@ -69,4 +68,41 @@ button:hover{ transform: scale(1.1);}
   color: white;
   text-decoration: underline;
   cursor:pointer;
+}
+
+.background-image{
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+}
+
+.card{
+  position: absolute;
+  object-fit:scale-down;
+  text-align: left;
+  color: white;
+  width: 30vh;
+  height: 45vh;
+  box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
+  padding: 5rem;
+  padding-left: 2rem;
+  border-radius: 40px;
+}
+
+.cardonetitle {
+  margin-top: 150px;
+}
+
+.button1{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button2 {
+  background: none;
+  margin-left: 170px;
+  color: white;
+  position: absolute;
+  padding-left: 20px;
+
 }
