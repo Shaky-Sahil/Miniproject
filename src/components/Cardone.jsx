@@ -21,7 +21,7 @@ export const Cardone = () => {
         <div style={myStyle1}></div>
         <div className="cardone">
             
-            <div style={myStyle} className="card">
+            <div  className="card">
                 <h1 className="cardonetitle">Welcome<br></br>
                 To<br></br>
                 XpLr

@@ -23,7 +23,7 @@ export const Register = () => {
         <div className="register">
             <div className="video-class">
                 <video src={videoBg} autoPlay loop muted /></div>
-                <div style={myStyle} className="auth">
+                <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>
                         <label>Full Name:</label>

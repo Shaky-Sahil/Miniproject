@@ -26,7 +26,7 @@ export const Loginform = () => {
             <div className="video-class">
                 <video src={videoBg} autoPlay loop muted />
             </div>
-            <div style={myStyle} className="auth">
+            <div  className="auth">
                 <h2 className="loginTitle">LOGIN</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>

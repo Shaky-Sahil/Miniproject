@@ -20,7 +20,7 @@ export const Cardtwo = () => {
         <> 
         <div style={myStyle1}></div>
         <div className="cardone">
-            <div style={myStyle} className="card">
+            <div  className="card">
             <Link style={{textDecoration:"none", color:"Black"}}to="/">
             <button className="prvbtn"><p>&lt;</p></button>
             </Link>
