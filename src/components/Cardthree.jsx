@@ -21,8 +21,8 @@ export const Cardthree = () => {
                 Welcome to the future of travelling.
                 Make the most of your trip with the guidance of our app.
                 </p>
-                <button className="button1">Next</button>
-                <button className="button2">Skip</button>
+                {/* <button className="button1">Next</button>
+                <button className="button2">Skip</button> */}
             </div>
         </>
     )

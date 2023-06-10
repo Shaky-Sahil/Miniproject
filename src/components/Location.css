@@ -1,0 +1,39 @@
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .slider-dots li.slick-active {
+    background-color: #000;
+  }
+  .image-slider {
+    max-width: 500px;
+    margin: 0 auto;
+    position: absolute;
+  }
+  
+  .image-slider .slick-slide img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-slider {
+      max-width: 330px;
+      max-height: 690px;
+    }
+  }
+  

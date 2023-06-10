@@ -23,10 +23,10 @@ export const Cardone = () => {
                 Welcome to the future of travelling.
                 Make the most of your trip with the guidance of our app.
                 </p>
-                <button className="button1">
+                {/* <button className="button1">
                 <Link style={{textDecoration:"none", color:"Black"}}to="/cardtwo">Next</Link>
                 </button>
-                <Link className="button2">Skip</Link>
+                <Link className="button2">Skip</Link> */}
             </div>
         </>
     )

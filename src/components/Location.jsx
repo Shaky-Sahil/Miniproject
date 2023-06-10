@@ -2,11 +2,12 @@ import React from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import "./Location.css"
 
 
 const Location = () => {
     const images = [
-        'https://example.com/image1.jpg',
+        'https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4',
         'https://example.com/image2.jpg',
         'https://example.com/image3.jpg',
         // Add more image URLs as needed
@@ -14,6 +15,7 @@ const Location = () => {
     
       const settings = {
         dots: true,
+        dotsClass: 'slider-dots', // Custom class for dots container
         infinite: false,
         speed: 500,
         slidesToShow: 1,
@@ -28,11 +30,13 @@ const Location = () => {
             {images.map((image, index) => (
               <div key={index}>
                 <img src={image} alt={`Slide ${index + 1}`} />
+             
               </div>
             ))}
           </Slider>
         </div>
       );
+    
 }
 
 export default Location
