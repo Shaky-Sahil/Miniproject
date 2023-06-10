@@ -1,4 +1,5 @@
 import React, { Component, useState, usestate } from "react"
+import "./Loginform.css"
 import { Text } from "./Text"
 import videoBg from '../images/videoBg.mp4'
 
@@ -20,10 +21,11 @@ export const Loginform = () => {
 
     return(
     <> 
-    <div className="video-class">
-        <video src={videoBg} autoPlay loop muted />
-    </div>
-        <div style={myStyle} className="auth">
+        <div className="login">
+            <div className="video-class">
+                <video src={videoBg} autoPlay loop muted />
+            </div>
+            <div style={myStyle} className="auth">
             <h2>LOGIN</h2>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">Email:</label>
@@ -34,6 +36,7 @@ export const Loginform = () => {
                 <button className="link">Register now</button>
             </form> 
             <Text />
+        </div>
         </div>
     </>
     )
