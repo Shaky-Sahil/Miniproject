@@ -6,6 +6,8 @@ import { Cardtwo } from './components/Cardtwo'
 import { Cardthree } from './components/Cardthree'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css"
+import Userprofile from './components/Userprofile';
+import Location from './components/Location';
 
 function App() {
 
