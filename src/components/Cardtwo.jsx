@@ -1,5 +1,6 @@
 import React from "react"
 import videoBg from '../images/a3.jpg'
+import { Link } from "react-router-dom";
 
 export const Cardtwo = () => {
 
@@ -20,8 +21,10 @@ export const Cardtwo = () => {
                 Welcome to the future of travelling.
                 Make the most of your trip with the guidance of our app.
                 </p>
-                <button className="button1">Next</button>
-                <button className="button2">Skip</button>
+                <button className="button1">
+                <Link style={{textDecoration:"none", color:"Black"}}to="/cardthree">Next</Link>
+                </button>
+                <Link className="button2">Skip</Link>
             </div>
         </>
     )

@@ -3,6 +3,7 @@ import { Loginform } from './components/Loginform'
 import { Cardone } from './components/Cardone'
 import { Register } from './components/Register'
 import { Cardtwo } from './components/Cardtwo'
+import { Cardthree } from './components/Cardthree'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "./App.css"
 
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route path='/'element={<Cardone/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
+      <Route path='/cardthree'element={<Cardthree/>}></Route>
     </Routes>
   </BrowserRouter>
     </div>
