@@ -21,16 +21,23 @@ export const Cardthree = () => {
         <div style={myStyle1}></div>
         <div className="cardone">
             <div style={myStyle} className="card">
-                <h1 className="cardonetitle"><br></br>
+            <Link style={{textDecoration:"none", color:"Black"}}to="/cardtwo">
+            <button className="prvbtn"><p>&lt;</p></button>
+            </Link>
+                <h1 className="cardonetitle">HaVe A<br></br>
+                SaFe<br></br>
+                Trip
                 </h1>
                 <p className="cardonepara">
-                Welcome to the future of travelling.
-                Make the most of your trip with the guidance of our app.
+                Make the most of this opportunity. We have over 30+ SAFE Locations that you can visit.
                 </p>
-                <Link style={{textDecoration:"none", color:"Black"}}to="/">
+                <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                     <button className="button1">Next</button>
                     </Link>
+                    <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                 <button className="button2">Skip</button>
+                </Link>
+                
             </div>
             </div>
         </>

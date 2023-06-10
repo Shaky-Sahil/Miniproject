@@ -25,15 +25,18 @@ const Location = () => {
       };
     
       return (
+        <div className='Location'>
+          
         <div className="image-slider">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index}>
                 <img src={image} alt={`Slide ${index + 1}`} />
-             
+                <h1>hi</h1>
               </div>
             ))}
           </Slider>
+        </div>
         </div>
       );
     

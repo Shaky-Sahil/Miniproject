@@ -1,4 +1,4 @@
-*{
+*{  margin:0;
     overflow: hidden;
   }
   
@@ -19,8 +19,10 @@
 
   .auth{
 
-    position: absolute;
     padding: 5rem;
+    width: 180px;
+    height: 400px;
+    position: absolute;
     border-radius: 10px;
     box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
     
@@ -54,5 +56,16 @@
     color: white;
     text-decoration: underline;
     cursor:pointer;
+    
+  }
+
+  .signbtn{
+    margin-top: 10px;
+   padding-right: 60px;
+   padding-left: 60px;
   }
   
+  .registerTitle{
+    margin-top: -25px;
+    margin-bottom: 25px;
+  }
