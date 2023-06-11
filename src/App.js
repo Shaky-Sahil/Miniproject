@@ -9,6 +9,7 @@ import "./App.css"
 import "./components/Cardone.css"
 import Userprofile from './components/Userprofile';
 import Location from './components/Location';
+import Mapview from './components/Mapview'
 
 function App() {
 
@@ -16,15 +17,15 @@ function App() {
     <>
  
     <div className='App'> 
-    <Location/>
-    {/* <BrowserRouter>
-
+    <BrowserRouter>
     <Routes>
-      <Route path='/'element={<Cardone/>}></Route>
+      <Route path='/'element={<Mapview/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
       <Route path='/cardthree'element={<Cardthree/>}></Route>
+      <Route path='/loginform'element={<Loginform />}></Route>
+      <Route path='/register'element={<Register />}></Route>
     </Routes>
-  </BrowserRouter> */}
+  </BrowserRouter> 
     </div>
     </>
   );

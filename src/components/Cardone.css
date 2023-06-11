@@ -3,6 +3,7 @@
   }
 
 .cardone{
+
   color: white;
   text-align: center;
   display: flex;
@@ -16,30 +17,42 @@
     object-fit:scale-down;
     text-align: left;
     color: white;
-    width: 30vh;
-    height: 45vh;
+    width: 25vh;
+    height: 40vh;
     margin-top: 100px;
     box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
     padding: 5rem;
     padding-left: 2rem;
-    margin-top: -50rem;
+    margin-top: -57rem;
     border-radius: 40px;
   }
 
   .cardonetitle {
-    margin-top: 150px;
+    font-size: 50px;
+    margin-top: -5px;
+    margin-right: -30px;
+  }
+
+  .cardonepara{
+    margin-top: 20px;
   }
   
   .button1{
+    margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
   
   .button2 {
+    margin-top: 20px;
     background: none;
     margin-left: 170px;
     color: white;
     position: absolute;
     padding-left: 20px;
+  }
+
+  .prvbtn{
+    margin-top: -55px;
   }
   

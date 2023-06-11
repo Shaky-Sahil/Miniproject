@@ -1,19 +1,40 @@
-*{
+/* *{
   overflow: hidden;
   font-family: "CustomFont";
-}
+} */
 
 @font-face {
   font-family: "CustomFont";
   src: url(../src/fonts/google-sans-cufonfonts-webfont/ProductSans-Bold.woff);
 }
 
-.App{
- 
-  /* text-align: center; */
+/* .App{
+  color: white;
+  text-align: center;
   display: flex;
   height:100vh;
-  /* align-items: center; */
+  /* align-items: center; 
   justify-content: center;
   
+} */
+
+.map-cont{
+  height: 30vh;
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.exp-map-cont{
+  height: 75vh;
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.exp{
+  width: 90vw;
+  margin-left: 5vw;
+  text-align: center;
+  
+  color: white;
+  background-color: rgb(116, 107, 107);
 }

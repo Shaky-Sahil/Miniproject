@@ -20,19 +20,24 @@ export const Cardtwo = () => {
         <> 
         <div style={myStyle1}></div>
         <div className="cardone">
-            <div style={myStyle} className="card">
-                <h1 className="cardonetitle">Make<br></br>
+            <div  className="card">
+            <Link style={{textDecoration:"none", color:"Black"}}to="/">
+            <button className="prvbtn"><p>&lt;</p></button>
+            </Link>
+                <h1 className="cardonetitle">Create<br></br>
                 Core Memories
                 </h1>
                 <p className="cardonepara">
-                Welcome to the future of travelling.
-                Make the most of your trip with the guidance of our app.
+                Create your most splendid core memories along your trip.
+                while we do all the hard work of "choosing where to go".
                 </p>
                 
                 <Link style={{textDecoration:"none", color:"Black"}}to="/cardthree">
                     <button className="button1">Next</button>
                 </Link>
+                <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                 <button className="button2">Skip</button>
+                </Link>
             </div>
             </div>
         </>

@@ -20,9 +20,10 @@ export const Cardone = () => {
         <> 
         <div style={myStyle1}></div>
         <div className="cardone">
-            <div style={myStyle} className="card">
+            
+            <div  className="card">
                 <h1 className="cardonetitle">Welcome<br></br>
-                To
+                To<br></br>
                 XpLr
                 </h1>
                 <p className="cardonepara">
@@ -34,7 +35,9 @@ export const Cardone = () => {
                     <button className="button1">Next
                     </button>
                 </Link>
+                <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                 <button className="button2">Skip</button>
+                </Link>
             </div>
         </div>
         </>
