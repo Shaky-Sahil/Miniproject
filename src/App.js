@@ -5,7 +5,7 @@ import { Register } from './components/Register'
 import { Cardtwo } from './components/Cardtwo'
 import { Cardthree } from './components/Cardthree'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import "./App.css"
+import "./App.css"
 import "./components/Cardone.css"
 import Userprofile from './components/Userprofile';
 import Location from './components/Location';
@@ -17,7 +17,8 @@ function App() {
     <>
  
     <div className='App'> 
-    <BrowserRouter>
+    <Location/>
+    {/* <BrowserRouter>
     <Routes>
       <Route path='/'element={<Cardone/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
@@ -25,7 +26,7 @@ function App() {
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
     </Routes>
-  </BrowserRouter> 
+  </BrowserRouter>  */}
     </div>
     </>
   );
