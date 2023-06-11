@@ -34,6 +34,20 @@ const Location = () => {
               </div>
             ))}
           </Slider>
+         
+          <h2>Fruits World</h2>
+          <div>
+            <h4>Information</h4>
+          </div>
+          <div>
+          <p className="slider-text">This is a caption or description
+            This is fruits world welcome . Here every fruit is generated scientifically asga
+            asgsadg
+            dsfhdfhs g afghajsfh asbfka ashkfba aksbhf asf kjasbf ashfba  akjsf ahkf ga sfkja hsfa shkf asjfkh afkjahsf asfkhasf akjsfh asf
+            afj hasfkj haf a fkjashf asfakjsf h afakh 
+            </p>
+            
+          </div>
         </div>
       );
     
