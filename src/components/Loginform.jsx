@@ -1,6 +1,7 @@
 import React, { Component, useState, usestate } from "react"
 import "./Loginform.css"
 import { Text } from "./Text"
+import a1 from "../images/logo2.png"
 import videoBg from '../images/videoBg.mp4'
 import { Link } from "react-router-dom";
 
@@ -35,6 +36,7 @@ export const Loginform = () => {
             </div> */}
              <div style={myStyle1}></div>
             <div  className="auth">
+                {/* <img className="loginlogo" src={a1}></img> */}
                 <h2 className="loginTitle">LOGIN</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>
