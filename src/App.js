@@ -17,7 +17,7 @@ function App() {
     <>
  
     <div className='App'> 
-    {/* <Userprofile/> */}
+    {/* <Location/> */}
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Cardone/>}></Route>
