@@ -17,7 +17,8 @@ function App() {
     <>
  
     <div className='App'> 
-    <BrowserRouter>
+    <Location/>
+    {/* <BrowserRouter>
     <Routes>
       <Route path='/'element={<Mapview/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
@@ -25,7 +26,7 @@ function App() {
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
     </Routes>
-  </BrowserRouter> 
+  </BrowserRouter>  */}
     </div>
     </>
   );

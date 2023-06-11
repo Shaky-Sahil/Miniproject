@@ -2,9 +2,10 @@
   color: rgb(0, 0, 0);
   text-align: center;
   display: flex;
-  height:100vh;
-  align-items: center;
+  /* height:100vh; */
+  /* align-items: center; */
   justify-content: center;
+  height: 60vh;
 }
 
 .slider-dots {
@@ -33,20 +34,23 @@
   .image-slider {
     max-width: 80vw;
     margin-top: 50px;
-    
    
   }
   
   .image-slider .slick-slide img {
     width: 100%;
-    height: auto;
+   
   }
+  
   
   @media screen and (max-width: 480px)  {
     .image-slider {
       max-width: 330px;
       font-size: 14px;
-      margin-top: 10px;
+      
     }
+  }
+  .slider-text{
+    margin-top: 100px;
   }
  
