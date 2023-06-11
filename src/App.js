@@ -17,16 +17,17 @@ function App() {
     <>
  
     <div className='App'> 
-    <Location/>
-    {/* <BrowserRouter>
+    {/* <Userprofile/> */}
+    <BrowserRouter>
     <Routes>
       <Route path='/'element={<Cardone/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
       <Route path='/cardthree'element={<Cardthree/>}></Route>
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
+      <Route path='/mapview'element={<Mapview />}></Route>
     </Routes>
-  </BrowserRouter>  */}
+  </BrowserRouter> 
     </div>
     </>
   );

@@ -41,7 +41,9 @@ export const Loginform = () => {
                     <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
                     <label htmlFor="password">Password:</label>
                     <input value={pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="Password" id="password" name="password" />
-                    <button href="/login-submit" type="submmit">Login</button>
+                    <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
+                        <button className="login-button">Login</button>
+                    </Link>
                     <Link style={{textDecoration:"none", color:"Black"}}to="/register">
                         <button className="link">Register now</button>
                     </Link>

@@ -33,7 +33,7 @@ export const Cardone = () => {
                         <button className="button1">Next
                         </button>
                     </Link>
-                <   Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
+                    <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                         <button className="button2">Skip</button>
                     </Link>
                 </div>
