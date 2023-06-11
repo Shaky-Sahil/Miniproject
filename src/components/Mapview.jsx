@@ -18,6 +18,7 @@ function mapTiler (x, y, z, dpr) {
 
 const [coordinates,setCoordinates] = useState([8.5241,76.9366])
 const [locations,setLocations] = useState([])
+const [isActive, setIsActive] = useState(false);
 const screenWidth = window.innerWidth
 const successCallback = (position) => {
   console.log(position);
@@ -45,10 +46,15 @@ useEffect(()=>{
 
 const id = navigator.geolocation.watchPosition(successCallback, errorCallback);
 
+const handleExpand = event => {
+  // 👇️ toggle isActive state on click
+  setIsActive(current => !current);
+};
+
   return (
     <div className="App">
       Mini project
-      <div className='map-cont'>
+      <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
     <Map  className='map'  defaultCenter={[8.5039,76.9511]} provider={mapTiler} defaultZoom={12}>
       <ZoomControl/>      
       {locations.map((l,i)=>(
@@ -63,6 +69,9 @@ const id = navigator.geolocation.watchPosition(successCallback, errorCallback);
       </Overlay>
       </Map>
     </div>
+    <div className='exp' onClick={handleExpand}>
+        Expand
+      </div>
     </div>
   );
 }
