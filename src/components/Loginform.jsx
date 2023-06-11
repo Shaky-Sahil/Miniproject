@@ -18,14 +18,22 @@ export const Loginform = () => {
         backgroundImage: "url('https://a-static.besthdwallpaper.com/green-leaves-with-black-shadow-wallpaper-2048x1536-78534_26.jpg')",
         backgroundSize: 'cover'
       };
+
+      const myStyle1={
+        backgroundImage: "url('https://wallpaperaccess.com/full/5323823.jpg')",
+        height: '100vh',
+        width: '100%',
+        backgroundSize: 'cover',
+    };
      
 
     return(
     <> 
         <div className="login">
-            <div className="video-class">
+            {/* <div className="video-class">
                 <video src={videoBg} autoPlay loop muted />
-            </div>
+            </div> */}
+             <div style={myStyle1}></div>
             <div  className="auth">
                 <h2 className="loginTitle">LOGIN</h2>
                 <form className="login-form" onSubmit={handleSubmit}>

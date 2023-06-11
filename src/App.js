@@ -19,7 +19,7 @@ function App() {
     <div className='App'> 
     <BrowserRouter>
     <Routes>
-      <Route path='/'element={<Mapview/>}></Route>
+      <Route path='/'element={<Cardone/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
       <Route path='/cardthree'element={<Cardthree/>}></Route>
       <Route path='/loginform'element={<Loginform />}></Route>
