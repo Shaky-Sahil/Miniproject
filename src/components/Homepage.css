@@ -19,10 +19,6 @@
     margin-top: 100%;
 }
 
-.mountain{
-    width: 200%;
-    margin-top: -70%;
-}
 
 .xplr-header{
     font-size: 600%;
@@ -49,3 +45,33 @@
     width: 50%;
 }
 
+.mountain{
+    width: 100%;
+    margin-top: -400%;
+    margin-bottom: 50%;
+}
+
+.forest{
+    width: 120%;
+    margin-top: -500%;
+    margin-bottom: 140%;
+}
+
+.about-para{
+    margin-top: -147%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.xplr-header-2{
+    font-size: 350%;
+    margin-top: -145%;
+    text-shadow: 0 0.188em 1.00em rgb(0, 255, 13); ;
+    
+}
+
+.grass{
+    width: 100%;
+    margin-top: -800%;
+    margin-bottom: 230%;
+}
