@@ -41,9 +41,11 @@ const Userprofile = () => {
               </div>
               <input type="file" accept="image/*" ref={fileInputRef} onChange={handlePictureChange} style={{ display: 'none' }} />
             </div>
+            <div className='username'>
               <h2>{userProfile.name}</h2>
               <p>@{userProfile.username}</p>
               <p>Email: {userProfile.email}</p>
+              </div>
             </div>
             <div>
             <h1> &ensp;69 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 70</h1>

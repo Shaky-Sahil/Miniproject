@@ -40,6 +40,7 @@
   }
 
   button{
+    
     border: none;
     background-color: white;
     padding: 10px;
@@ -58,5 +59,19 @@
   }
   
   .loginTitle{
-    margin-top: 25px;
+    margin-top: 30px;
+  }
+
+  .login-button{
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .loginlogo{
+    position: absolute;
+    margin-left: -33px;
+    margin-top: -55px;
+    height: 70px;
+    width: 70px;
+
   }

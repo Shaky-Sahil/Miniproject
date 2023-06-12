@@ -15,10 +15,10 @@
   .register-form{
     display: flex;
     flex-direction: column;
+    margin-top: -7px;
   }
 
   .auth{
-
     padding: 5rem;
     width: 180px;
     height: 400px;

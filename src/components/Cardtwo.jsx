@@ -18,7 +18,7 @@ export const Cardtwo = () => {
 
     return(
         <> 
-        <div style={myStyle1}></div>
+        <div style={myStyle1}>
         <div className="cardone">
             <div  className="card">
             <Link style={{textDecoration:"none", color:"Black"}}to="/">
@@ -38,6 +38,7 @@ export const Cardtwo = () => {
                 <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
                 <button className="button2">Skip</button>
                 </Link>
+            </div>
             </div>
             </div>
         </>

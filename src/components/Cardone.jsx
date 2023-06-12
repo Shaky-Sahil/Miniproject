@@ -18,26 +18,25 @@ export const Cardone = () => {
 
     return(
         <> 
-        <div style={myStyle1}></div>
-        <div className="cardone">
-            
-            <div  className="card">
-                <h1 className="cardonetitle">Welcome<br></br>
-                To<br></br>
-                XpLr
-                </h1>
-                <p className="cardonepara">
-                Welcome to the future of travelling.
-                Make the most of your trip with the guidance of our app.
-                </p>
-                
-                <Link style={{textDecoration:"none", color:"Black"}}to="/cardtwo">
-                    <button className="button1">Next
-                    </button>
-                </Link>
-                <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
-                <button className="button2">Skip</button>
-                </Link>
+        <div style={myStyle1}>
+            <div className="cardone"> 
+                <div  className="card">
+                    <h1 className="cardonetitle">Welcome<br></br>
+                        To<br></br>
+                        XpLr
+                    </h1>
+                    <p className="cardonepara">
+                        Welcome to the future of travelling.
+                        Make the most of your trip with the guidance of our app.
+                    </p>
+                    <Link style={{textDecoration:"none", color:"Black"}}to="/cardtwo">
+                        <button className="button1">Next
+                        </button>
+                    </Link>
+                    <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
+                        <button className="button2">Skip</button>
+                    </Link>
+                </div>
             </div>
         </div>
         </>

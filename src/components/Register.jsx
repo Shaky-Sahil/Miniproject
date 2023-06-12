@@ -25,11 +25,20 @@ export const Register = () => {
         backgroundSize: 'cover'
       };
 
+      const myStyle1={
+        backgroundImage: "url('https://wallpaperaccess.com/full/5323823.jpg')",
+        height: '100vh',
+        width: '100%',
+        backgroundSize: 'cover',
+    };
+     
+
     return(
         <>
         <div className="register">
-            <div className="video-class">
-                <video src={videoBg} autoPlay loop muted /></div>
+            {/* <div className="video-class">
+                <video src={videoBg} autoPlay loop muted /></div> */}
+                <div style={myStyle1}></div>
                 <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>

@@ -1,0 +1,29 @@
+*{
+    overflow: hidden;
+}
+
+.getstarted-css{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+}
+
+.get-button{
+    margin-top: 700px;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-left: 50px;
+    margin-right: 65px;
+    box-shadow: 0 0.188em 1.00em rgb(255, 255, 255);
+}
+
+.starting-image{
+    position: absolute;
+    margin-top: -75px;
+    height: 200px;
+    width: 200px;
+    
+}
