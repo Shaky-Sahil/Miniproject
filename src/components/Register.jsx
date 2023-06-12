@@ -1,10 +1,11 @@
-import React, { useState,useForm } from "react"
+import React, { useState } from "react"
 import videoBg from '../images/videoBg.mp4'
 import "./Register.css"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 export const Register = () => {
    
     
