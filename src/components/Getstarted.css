@@ -1,6 +1,4 @@
-*{
-    overflow: hidden;
-}
+
 
 .getstarted-css{
     position: absolute;
@@ -13,11 +11,8 @@
 
 .get-button{
     margin-top: 700px;
-    padding-right: 45px;
-    padding-left: 45px;
     margin-left: 50px;
     margin-right: 65px;
-    box-shadow: 0 0.188em 1.00em rgb(255, 255, 255);
 }
 
 .starting-image{
@@ -26,4 +21,9 @@
     height: 200px;
     width: 200px;
     
+}
+
+.embark{
+    padding-right: 45px;
+    padding-left: 45px;
 }

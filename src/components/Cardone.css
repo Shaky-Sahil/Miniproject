@@ -1,7 +1,3 @@
-*{
-   overflow: hidden;
-  
-  }
 
 .cardone{
   color: white;
@@ -52,5 +48,6 @@
 
   .prvbtn{
     margin-bottom: 20px;
+    
   }
 

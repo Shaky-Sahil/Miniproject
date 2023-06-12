@@ -21,7 +21,7 @@ export const Cardtwo = () => {
         <div style={myStyle1}>
         <div className="cardone">
             <div  className="card">
-            <Link style={{textDecoration:"none", color:"Black"}}to="/">
+            <Link style={{textDecoration:"none", color:"Black"}}to="/cardone">
             <button className="prvbtn"><p>&lt;</p></button>
             </Link>
                 <h1 className="cardonetitle">Create<br></br>

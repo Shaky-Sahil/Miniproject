@@ -1,0 +1,51 @@
+.Homepage{
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-content: center;
+    
+}
+
+.Home-logo{
+    width: 20vw;
+    margin-top: 20px;
+
+}
+
+.welcome-head{
+    text-align: center;
+    margin-top: 100%;
+}
+
+.mountain{
+    width: 200%;
+    margin-top: -70%;
+}
+
+.xplr-header{
+    font-size: 600%;
+    margin-top: 70%;
+    text-shadow: 0 0.188em 1.00em rgb(0, 247, 255); ;
+    
+}
+
+.welcome-para{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: -1.5%;
+}
+
+.trees1{
+    width: 100%;
+    margin-top: 100%;
+}
+
+.birds{
+  
+    margin-top: 100%;
+    margin-right: -40%;
+    width: 50%;
+}
+
