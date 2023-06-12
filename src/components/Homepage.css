@@ -23,7 +23,7 @@
 .xplr-header{
     font-size: 600%;
     margin-top: 70%;
-    text-shadow: 0 0.188em 1.00em rgb(0, 247, 255); ;
+    text-shadow: 0 0 1.00em rgb(0, 247, 255); ;
     
 }
 
@@ -53,25 +53,55 @@
 
 .forest{
     width: 120%;
-    margin-top: -500%;
-    margin-bottom: 120%;
+    margin-top: -400%;
+    margin-bottom: 70%;
 }
 
 .about-para{
-    margin-top: -147%;
+    margin-top: -100%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .xplr-header-2{
     font-size: 350%;
-    margin-top: -145%;
-    text-shadow: 0 0.188em 1.00em rgb(0, 255, 13); ;
+    margin-top: -105%;
+    text-shadow: 0 0em 1.00em rgb(0, 255, 13); ;
     
 }
 
 .grass{
     width: 100%;
     margin-top: -800%;
-    margin-bottom: 230%;
+    margin-bottom: 160%;
+}
+
+.xplr-header-3{
+    font-size: 350%;
+    margin-top: -260%;
+    width: 70%;
+    margin-left: 15%;
+    background-color: black;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    color: rgb(255, 255, 255);
+}
+
+.white{
+    width: 100%;
+    margin-top: -800%;
+    margin-bottom: 320%;
+}
+
+.snow{
+    width: 150%;
+    opacity: 30%;
+    margin-top: -800%;
+    margin-bottom: 410%;
+    
+}
+
+.snowbottom{
+    width: 100%;
+    margin-top: -800%;
+    margin-bottom: 390%;
 }

@@ -6,6 +6,9 @@ import birds from "../images/birds.png"
 import mountain4 from "../images/mountain4.jpg"
 import forest from "../images/forest.png"
 import grass from "../images/grass2.png"
+import white from "../images/white.jpg"
+import snow from "../images/snow.png"
+import snowbottom from "../images/snowbottom.png"
 
 export const Homepage = () => {
     return(
@@ -47,6 +50,22 @@ export const Homepage = () => {
 
                 <ParallaxLayer offset={1} speed={3}>
                     <img className="grass" src={grass}></img>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={2} speed={1.5}>
+                    <img className="white" src={white}></img>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={2} speed={0.6}>
+                    <h2 className="xplr-header-3">FEATURES</h2>
+                </ParallaxLayer>
+
+                <ParallaxLayer offset={2} speed={1.8}>
+                    <img className="snow" src={snow}></img>
+                </ParallaxLayer>
+                
+                <ParallaxLayer offset={2} speed={2}>
+                    <img className="snowbottom" src={snowbottom}></img>
                 </ParallaxLayer>
 
             </Parallax>
