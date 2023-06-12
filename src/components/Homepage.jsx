@@ -35,11 +35,11 @@ export const Homepage = () => {
                     <img className="forest" src={forest}></img>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={0.8}>
+                <ParallaxLayer offset={1} speed={1}>
                     <h2 className="xplr-header-2">ABOUT US</h2>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={1} speed={1}>
+                <ParallaxLayer offset={1} speed={1.2}>
                     <h2 className="about-para"> Our App Has A Wide Variety Of Features But Mostly
                     Helps Users Have A Safe And Scam Free Journey.</h2>
                 </ParallaxLayer>
@@ -77,6 +77,18 @@ export const Homepage = () => {
                     jksbgkjsgbsjkgbsjkbgj</p>
                     
                     <p className="features-para5">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
+                    sjgbskjgbsjkbgjksdbdg
+                    jksbgkjsgbsjkgbsjkbgj</p>
+
+                     <p className="features-para4">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
+                    sjgbskjgbsjkbgjksdbdg
+                    jksbgkjsgbsjkgbsjkbgj</p>
+
+                    <p className="features-para7">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
+                    sjgbskjgbsjkbgjksdbdg
+                    jksbgkjsgbsjkgbsjkbgj</p>
+
+                    <p className="features-para4">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
                     sjgbskjgbsjkbgjksdbdg
                     jksbgkjsgbsjkgbsjkbgj</p>
 
