@@ -36,7 +36,7 @@ const errorCallback = (error) => {
 
 useEffect(()=>{
   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-  axios.get('http://localhost:5000/').then((res)=>{
+  axios.get('https://dull-cyan-marlin-kit.cyclic.app/').then((res)=>{
     res.data.map((r)=>{
     // setLocations((prevState) => ([ ...prevState, [r.lat,r.lon] ]));
 
