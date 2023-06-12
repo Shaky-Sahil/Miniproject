@@ -2,7 +2,6 @@ import React, { Component, useState,useEffect } from "react"
 import "./Loginform.css"
 import { Text } from "./Text"
 import a1 from "../images/logo2.png"
-import videoBg from '../images/videoBg.mp4'
 import { Link, useFormAction } from "react-router-dom";
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
@@ -52,9 +51,6 @@ export const Loginform = () => {
     return(
     <> 
         <div className="login">
-            {/* <div className="video-class">
-                <video src={videoBg} autoPlay loop muted />
-            </div> */}
              <div style={myStyle1}></div>
             <div  className="auth">
                 {/* <img className="loginlogo" src={a1}></img> */}

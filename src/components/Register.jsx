@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import videoBg from '../images/videoBg.mp4'
 import "./Register.css"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -41,8 +40,7 @@ export const Register = () => {
     return(
         <>
         <div className="register">
-            {/* <div className="video-class">
-                <video src={videoBg} autoPlay loop muted /></div> */}
+           
                 <div style={myStyle1}></div>
                 <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
