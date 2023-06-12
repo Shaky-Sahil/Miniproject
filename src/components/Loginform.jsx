@@ -1,9 +1,12 @@
-import React, { Component, useState, useForm } from "react"
+import React, { Component, useState, useForm,useEffect } from "react"
 import "./Loginform.css"
 import { Text } from "./Text"
 import a1 from "../images/logo2.png"
 import videoBg from '../images/videoBg.mp4'
 import { Link } from "react-router-dom";
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
 
 export const Loginform = () => {
   const {register, handleSubmit} = useForm()

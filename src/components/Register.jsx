@@ -1,23 +1,27 @@
-import React, { useState } from "react"
+import React, { useState,useForm } from "react"
 import videoBg from '../images/videoBg.mp4'
 import "./Register.css"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import axios from 'axios';
 export const Register = () => {
    
     
      
         const {register, handleSubmit} = useForm()
+        const navigate = useNavigate()
         const handleSignup = (data) => {
-        //     axios.post('http://localhost:6901/users',data).then((response)=>{
-        //       console.log(response)
-        //       navigate("/Login");
-        //     }).catch(()=>{
-        //         toast.error('Invalid Data');
-        //         console.log("something went wrong")
-        //         navigate("/Signup")
+            axios.post('http://localhost:6901/users',data).then((response)=>{
+              console.log(response)
+              navigate("/Login");
+            }).catch(()=>{
+                toast.error('Invalid Data');
+                console.log("something went wrong")
+                navigate("/Signup")
 
-        // })
-    navigate("/Login");
+        })
+    
 }
 
     const myStyle={
@@ -43,7 +47,7 @@ export const Register = () => {
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>
                         <label>Full Name:</label>
-                        <input value={name} name="name" id="name" placeholder="Full Name"  {...register('userName')}/>
+                        <input  name="name" id="name" placeholder="Full Name"  {...register('userName')}/>
                         <label htmlFor="email">Email:</label>
                         <input type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
                         <label htmlFor="password">Password:</label>
