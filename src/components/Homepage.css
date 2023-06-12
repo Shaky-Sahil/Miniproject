@@ -77,31 +77,111 @@
 }
 
 .xplr-header-3{
-    font-size: 350%;
-    margin-top: -260%;
+    font-size: 260%;
+    margin-top: -160%;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 14.5%;
+    border: none;
+    border-radius:1em;
+    padding: 1%;
     background-color: black;
     text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
     color: rgb(255, 255, 255);
 }
 
 .white{
-    width: 100%;
-    margin-top: -800%;
-    margin-bottom: 320%;
+    width: 120%;
+    margin-left: -5%;
+    margin-top: -155%;
 }
 
 .snow{
     width: 150%;
     opacity: 30%;
-    margin-top: -800%;
-    margin-bottom: 410%;
+    margin-top: -300%;
+    margin-bottom: 50%;
     
 }
 
-.snowbottom{
-    width: 100%;
-    margin-top: -800%;
-    margin-bottom: 390%;
+
+.features-para{
+    margin-top: -100%;
+    margin-left: 10%;
+    border: none;
+    background-color: black;
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 10%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+.features-para2{
+    margin-top: 20%;
+    margin-left: 25%;
+    border: none;
+    background-color: black;
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 10%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+.features-para3{
+    margin-top: 20%;
+    margin-left: 10%;
+    border: none;
+    background-color: black;
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 25%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+.features-para4{
+    margin-top: 20%;
+    margin-left: 25%;
+    border: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 10%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+.features-para5{
+    margin-top: 20%;
+    margin-left: 10%;
+    border: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 25%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+.features-para6{
+    margin-top: 20%;
+    margin-left: 25%;
+    border: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius:1em;
+    padding: 3%;
+    margin-right: 10%;
+    text-shadow: 0 0 1.0em rgb(255, 255, 255); ;
+    box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
+}
+
+
+.Home-button{
+    margin-top: 100%;
+    
 }
