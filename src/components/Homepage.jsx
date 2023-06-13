@@ -7,6 +7,7 @@ import forest from "../images/forest.png"
 import grass from "../images/grass2.png"
 import white from "../images/white.jpg"
 import snow from "../images/snow.png"
+import { Link } from "react-router-dom";
 
 export const Homepage = () => {
     return(
@@ -61,10 +62,10 @@ export const Homepage = () => {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={2} speed={1}>
-                <p className="features-para">Our App Even if it comes with a huge amount of functionality,
+                    <p className="features-para">Our App Even if it comes with a huge amount of functionality,
                     Its goal is mainly to provide safety and provide information 
                     on safe places, places that are rid of all scams and frauds. </p>
-                <p className="features-para2">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
+                    <p className="features-para2">jjsbjkgbsjkgbsjkbgjksbgkjsbgb
                     sjgbskjgbsjkbgjksdbdg
                     jksbgkjsgbsjkgbsjkbgj</p>
 
@@ -106,13 +107,22 @@ export const Homepage = () => {
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={3} speed={1}>
-                    <div className="Home-button">
-                    <button>LOGIN</button> / <button>SIGN UP</button>
-                    </div>
+                    
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={3} speed={0.5} factor={1}>
                     <h1 className="xplr-header">XPLR</h1>
+                    <div className="Home-button">
+                        <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
+                            <button>LOGIN</button>
+                        </Link> //  
+                        <Link style={{textDecoration:"none", color:"Black"}}to="/register">
+                            <button>SIGN UP</button><br></br><br></br>
+                        </Link>
+                        <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
+                            <button>ENTER AS ADMIN</button>
+                        </Link>
+                    </div>
                 </ParallaxLayer>
 
             </Parallax>

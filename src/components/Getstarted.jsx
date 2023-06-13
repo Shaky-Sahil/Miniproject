@@ -20,7 +20,7 @@ export const Getstarted = () => {
                      
                 </h1>
                 <div className="get-button">
-                <Link style={{textDecoration:"none", color:"Black"}}to="/cardone">
+                <Link style={{textDecoration:"none", color:"Black"}}to="/homepage">
                         <button className="embark">EMBARK</button>
                 </Link>
                 </div>

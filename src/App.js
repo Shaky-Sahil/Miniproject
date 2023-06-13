@@ -19,18 +19,18 @@ function App() {
     <>
  
     <div className='App'> 
-    <Homepage />
-    {/* <BrowserRouter>
+    {/* <Mapview /> */}
+    <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>
-      <Route path='cardone'element={<Cardone/>}></Route>
-      <Route path='/cardtwo'element={<Cardtwo/>}></Route>
-      <Route path='/cardthree'element={<Cardthree/>}></Route>
+      <Route path='homepage'element={<Homepage/>}></Route>
+      <Route path='/mapview'element={<Mapview />}></Route>
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
-      <Route path='/mapview'element={<Mapview />}></Route>
+      <Route path='/location'element={<Location />}></Route>
+      <Route path='/userprofile'element={<Userprofile />}></Route>
     </Routes>
-  </BrowserRouter>  */}
+  </BrowserRouter> 
     </div>
     </>
   );

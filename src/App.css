@@ -21,10 +21,29 @@
 }
 
 .exp{
+  position: absolute;
   width: 90vw;
   margin-left: 5vw;
   text-align: center;
   
   color: white;
   background-color: rgb(116, 107, 107);
+}
+
+.user-btn{
+  font-size: 100%;
+  position: absolute;
+  background-color: rgb(149, 197, 255);
+  margin-top: 15%;
+  margin-left: 5%;
+  padding: 2rem;
+}
+
+.loc-btn{
+    font-size: 110%;
+    position: absolute;
+    background-color: rgb(149, 197, 255);
+    margin-top: 15%;
+    margin-left: 61.3%;
+    padding: 2rem;
 }

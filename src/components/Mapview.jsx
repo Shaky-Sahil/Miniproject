@@ -4,6 +4,8 @@ import { maptiler } from 'pigeon-maps/providers'
 import { Map, Marker, Overlay, ZoomControl } from 'pigeon-maps'
 import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
+import trees1 from "../images/trees1.png"
+import { Link } from "react-router-dom";
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -53,6 +55,8 @@ const handleExpand = event => {
 };
 
   return (
+    <>
+    <img className="user-bg" src={trees1}></img>
     <div className="App">
       Mini project
       <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
@@ -70,6 +74,13 @@ const handleExpand = event => {
         Expand
       </div>
     </div>
+    <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
+    <button className="user-btn">User Profile</button>
+    </Link>
+    <Link style={{textDecoration:"none", color:"Black"}}to="/location">
+    <button className='loc-btn'>locations</button>
+    </Link>
+    </>
   );
 }
 
