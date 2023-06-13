@@ -17,20 +17,20 @@
 .welcome-head{
     text-align: center;
     margin-top: 100%;
-    font-size: 90%;
+    font-size: 95%;
 }
 
 
 .xplr-header{
-    font-size: 250%;
-    margin-top: 82%;
+    font-size: 260%;
+    margin-top: 81%;
     
     text-shadow: 0 0 1.00em rgb(0, 247, 255); ;
     
 }
 
 .welcome-para{
-    font-size: 70%;
+    font-size: 80%;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: -0.6vh;
@@ -62,17 +62,33 @@
 }
 
 .about-para{
-    font-size: 80%;
-    margin-top: -60%;
+    font-size: 90%;
+    margin-top: -90%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .xplr-header-2{
-    font-size: 160%;
-    margin-top: -60%;
+    font-size: 170%;
+    margin-top: -90%;
     text-shadow: 0 0em 1.00em rgb(0, 255, 13); ;
     
+}
+
+.tourist{
+    background-color: white;
+    border-radius: 20%;
+    padding: 1%;
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.safety{
+    background-color: white;
+    border-radius: 20%;
+    padding: 1%;
+    width: 18%;
+    margin-bottom: 5%;
 }
 
 .grass{
@@ -82,7 +98,7 @@
 }
 
 .xplr-header-3{
-    font-size: 130%;
+    font-size: 150%;
     margin-top: -160%;
     width: 70%;
     margin-left: 14.5%;
@@ -111,20 +127,20 @@
 
 
 .features-para{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: -100%;
     margin-left: 10%;
     border: none;
     background-color: black;
     border-radius:1em;
     padding: 3%;
-    margin-right: 10%;
+    margin-right: 30%;
  
     box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
 }
 
 .features-para2{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 25%;
     border: none;
@@ -137,20 +153,20 @@
 }
 
 .features-para3{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 10%;
     border: none;
     background-color: black;
     border-radius:1em;
     padding: 3%;
-    margin-right: 25%;
+    margin-right: 30%;
 
     box-shadow:  0 0 1.0em rgb(255, 255, 255); ;
 }
 
 .features-para4{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 25%;
     border: none;
@@ -164,7 +180,7 @@
 }
 
 .features-para5{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 10%;
     border: none;
@@ -178,7 +194,7 @@
 }
 
 .features-para6{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 10%;
     border: none;
@@ -192,7 +208,7 @@
 }
 
 .features-para7{
-    font-size: 70%;
+    font-size: 85%;
     margin-top: 20%;
     margin-left: 10%;
     border: none;
@@ -206,12 +222,3 @@
 }
 
 
-.Home-button{
-    
-    
-}
-
-.stars{
-    width: 290%;
-    
-}

@@ -14,12 +14,12 @@ const Location = () => {
     
       const settings = {
         dots: true,
-        dotsClass: 'slider-dots', // Custom class for dots container
-        infinite: false,
+        // dotsClass: 'slider-dots', // Custom class for dots container
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         
       };

@@ -17,7 +17,8 @@
 
 .starting-image{
     position: absolute;
-    margin-top: -75px;
+    margin-top: -10%;
+    margin-left: -0%;
     height: 200px;
     width: 200px;
     
@@ -26,4 +27,14 @@
 .embark{
     padding-right: 45px;
     padding-left: 45px;
+    border: none;
+    padding-top: 5%;
+    padding-bottom:  5%;
+    background-color: white;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.5s;
+    
 }
+
+

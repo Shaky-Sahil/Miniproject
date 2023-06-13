@@ -61,6 +61,7 @@ const handleExpand = event => {
       Mini project
       <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
     <Map  className='map'  defaultCenter={[8.5039,76.9511]} provider={mapTiler} defaultZoom={13}>
+      
       <ZoomControl/>      
       {locations.map((l,i)=>(
       <Marker key={i} width={50} color='black' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}/>

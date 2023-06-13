@@ -60,7 +60,7 @@ export const Loginform = () => {
                     <input  type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>
                     <input  type="password" placeholder="Password" id="password" name="password" {...register('userPassword')} />
-                    <button href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
+                    <button className="button-universal" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
                     
                         <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
                  

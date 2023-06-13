@@ -1,7 +1,7 @@
 import React from "react"
 import "./Getstarted.css"
 import { Link } from "react-router-dom";
-import logo from "../images/logo2.png"
+import logo from "../images/logo4.png"
 
 export const Getstarted = () => {
 
