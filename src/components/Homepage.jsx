@@ -49,8 +49,8 @@ export const Homepage = () => {
                 <ParallaxLayer offset={1} speed={1.2}>
                     <h2 className="about-para"> Our App XPLR Is A Complete Tour Guide To
                     How One Should Go About Travelling Around Trivandrum Without Getting Scammed.
-                    <p>Every GenZ And Millennium In Trivandrum Arise To The Same Questions During The Weekends, 
-                        Those Are"Where Should We Go This Weekend", "Which Are The Current Prime Hotspots In Trivandrum" etc. 
+                    <p>Every GenZ And Millennial In Trivandrum Arise With The Same Questions On The Weekends, 
+                        Those Are "Where Should We Go This Weekend", "Which Are The Current Prime Hotspots In Trivandrum" etc. 
                         Even Tourists Visiting Trivandrum Have Similar Questions Regarding On Which Hotels Are Cheapest And The Most Reliable.</p>
                     <p>All These Questions Lead Us Towards Creating Our App XPLR. An App That Not Only Would Help Locals Of Trivandrum
                         Xplore The Uncharted Parts Of The City But Also Guide Tourists Towards Having A Risk-Free Experience. </p></h2>
@@ -93,7 +93,7 @@ export const Homepage = () => {
                     On Acquiring 10,000 Points, The User Would Complete The Game And Their Reward Would Be That They have Seen The Most Authentic Parts Of Trivandrum</p>
                     
                     <p className="features-para5"><img className="tourist" src={Tourists}></img>
-                    <br></br>We Provide Tourists To Filter Out Locations That Are Tourist Friendly. This Feature Was Implemented For Those Tourists Who Don't Want To Visit Locations That Are More Oriented Towards Locals.</p>
+                    <br></br>We Provide Tourists With An Option To Filter Out Locations That Are Not Tourist Friendly. This Feature Was Implemented For Those Tourists Who Don't Want To Visit Locations That Are More Oriented Towards Locals.</p>
 
                      <p className="features-para4"><img className="safety" src={user}></img>
                      <br></br>We Have Made Our App Extremely User-Friendly So As To Appeal To A Wider Age Group. XPLR Is An App Created For People Of Every Age Group To Get Into Xploration, Discovering All The Hidden Gems Of Trivandrum.
