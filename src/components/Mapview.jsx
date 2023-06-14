@@ -4,6 +4,8 @@ import { maptiler } from 'pigeon-maps/providers'
 import { Map, Marker, Overlay, ZoomControl } from 'pigeon-maps'
 import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
+import { SiGooglemaps } from 'react-icons/si';
+
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -56,13 +58,15 @@ const handleExpand = event => {
     <div className="App">
       Mini project
       <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
-    <Map  className='map'  defaultCenter={[8.5039,76.9511]} provider={mapTiler} defaultZoom={13}>
+    <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
       <ZoomControl/>      
       {locations.map((l,i)=>(
-      <Marker key={i} width={50} color='black' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}/>
+      <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}>
+        <SiGooglemaps size={25} onClick={()=>{alert(l.placeName)}} color='black'/>
+      </Overlay>
       ))}  
       <Overlay anchor={coordinates}>
-      <RiMapPinUserFill size={50}/>
+      <RiMapPinUserFill size={30}/>
       </Overlay>
       </Map>
     </div>

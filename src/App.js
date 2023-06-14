@@ -21,7 +21,7 @@ function App() {
     {/* <Userprofile/> */}
     <BrowserRouter>
     <Routes>
-      <Route path='/'element={<Getstarted/>}></Route>
+      <Route path='/'element={<Mapview/>}></Route>
       <Route path='cardone'element={<Cardone/>}></Route>
       <Route path='/cardtwo'element={<Cardtwo/>}></Route>
       <Route path='/cardthree'element={<Cardthree/>}></Route>
