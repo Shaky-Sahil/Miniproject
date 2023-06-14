@@ -26,7 +26,7 @@ export const Loginform = () => {
       localStorage.setItem("isAdmin",response.data.user.isAdmin)
       
         
-        navigate("/")
+        navigate("/mapview")
       
     })
     .catch(()=>{

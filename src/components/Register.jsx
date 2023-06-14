@@ -14,11 +14,11 @@ export const Register = () => {
         const handleSignup = (data) => {
             axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/signup',data).then((response)=>{
               console.log(response)
-              navigate("/Login");
+              navigate("/loginform");
             }).catch(()=>{
                 toast.error('Invalid Data');
                 console.log("something went wrong")
-                navigate("/Signup")
+                navigate("/register")
 
         })
     
