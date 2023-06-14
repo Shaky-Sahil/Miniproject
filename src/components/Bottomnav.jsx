@@ -11,12 +11,15 @@ const Bottomnav = () => {
   return (
     <div>
       <BottomNavigation
-      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,bgcolor:'grey' }} 
+      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,bgcolor:'black'}} 
   showLabels
 >
-  <BottomNavigationAction label="Home" icon={<AiFillHome />} onClick={()=>{navigate('/mapview')}}/>
-  <BottomNavigationAction label="location" icon={<BiCurrentLocation/>} onClick={()=>{navigate('/location')}}/>
-  <BottomNavigationAction label="Profile" icon={<FaUserAlt/>} onClick={()=>{navigate('/userprofile')}}/>
+  <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/mapview')}}
+  sx={{color:'white'}}/>
+  <BottomNavigationAction label="location" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/location')}}
+  sx={{color:'white'}}/>
+  <BottomNavigationAction label="Profile" icon={<FaUserAlt color='white'/>} onClick={()=>{navigate('/userprofile')}}
+  sx={{color:'white'}}/>
 </BottomNavigation>
     </div>
   )
