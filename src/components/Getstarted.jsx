@@ -1,10 +1,11 @@
 import React from "react"
 import "./Getstarted.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo4.png"
 
-export const Getstarted = () => {
 
+export const Getstarted = () => {
+    const navigate = useNavigate()
     const myStyle1={
         backgroundImage: "url('https://wallpaperaccess.com/full/5323823.jpg')",
         height: '100vh',
@@ -20,9 +21,8 @@ export const Getstarted = () => {
                      
                 </h1>
                 <div className="get-button">
-                <Link style={{textDecoration:"none", color:"Black"}}to="/homepage">
-                        <button className="embark">EMBARK</button>
-                </Link>
+               
+                        <button className="embark" onClick={()=>navigate('/homepage')}>EMBARK</button>
                 </div>
             </div>
         </>

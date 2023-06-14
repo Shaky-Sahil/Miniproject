@@ -27,7 +27,7 @@
   width: 90vw;
   margin-left: 5vw;
   text-align: center;
-  
+  content: 'expand';
   color: white;
   background-color: rgb(116, 107, 107);
 }
@@ -81,7 +81,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,38,58,1) 0%, rgba(2
 }
 
 .home{
-  background: rgb(13,23,28);
-background: radial-gradient(circle, rgba(13,23,28,1) 0%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+background-color: black;
 height: 100vh;
 }

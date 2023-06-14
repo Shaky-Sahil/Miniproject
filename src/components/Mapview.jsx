@@ -75,7 +75,7 @@ const handleExpand = event => {
       </Map>
     </div>
     <div className='exp' onClick={handleExpand}>
-        Expand
+    {isActive ? 'Minimize' : 'Expand'}
       </div>
     </div>
     {/* <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
