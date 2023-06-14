@@ -8,6 +8,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
 
+
 export const Loginform = () => {
   const {register, handleSubmit} = useForm()
   const navigate = useNavigate()
@@ -19,14 +20,17 @@ export const Loginform = () => {
 },[])
 
   const handleLogin = (data) => {
-    axios.post('http://localhost:6901/login',data).then((response)=>{
+    axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/login',data).then((response)=>{
       console.log(response.data.user.isAdmin)
       localStorage.setItem("authenticated", true);
       localStorage.setItem("token",response.data.token)
       localStorage.setItem("isAdmin",response.data.user.isAdmin)
-      
+      toast.success("Logged in successfully")
+      setTimeout(() => {
+        navigate("/mapview")
+      }, 1000);
         
-        navigate("/")
+
       
     })
     .catch(()=>{
@@ -57,9 +61,9 @@ export const Loginform = () => {
                 <h2 className="loginTitle">LOGIN</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>
-                    <input  type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
+                    <input  type="email" placeholder="youremail@gmail.com" id="email" name="userEmail" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>
-                    <input  type="password" placeholder="Password" id="password" name="password" {...register('userPassword')} />
+                    <input  type="password" placeholder="Password" id="password" name="userPassword" {...register('userPassword')} />
                     <button className="button-universal" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
                     
                         <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
@@ -68,6 +72,7 @@ export const Loginform = () => {
                 <Text />
             </div>
         </div>
+        <Toaster/>
     </>
     )
 }

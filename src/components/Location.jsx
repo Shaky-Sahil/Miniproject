@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./Location.css"
 import trees1 from "../images/trees1.png"
+import { BottomNavigation } from '@mui/material';
+import Bottomnav from './Bottomnav';
 
 const Location = () => {
     const images = [
@@ -71,7 +73,7 @@ const Location = () => {
         </div>
         <button className='btn'>GET DIRECTIONS</button>
         </div>
-        
+       <Bottomnav/>
         </>
       );
     

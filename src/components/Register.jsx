@@ -12,13 +12,13 @@ export const Register = () => {
         const {register, handleSubmit} = useForm()
         const navigate = useNavigate()
         const handleSignup = (data) => {
-            axios.post('http://localhost:6901/users',data).then((response)=>{
+            axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/signup',data).then((response)=>{
               console.log(response)
-              navigate("/Login");
+              navigate("/loginform");
             }).catch(()=>{
                 toast.error('Invalid Data');
                 console.log("something went wrong")
-                navigate("/Signup")
+                navigate("/register")
 
         })
     
@@ -62,6 +62,7 @@ export const Register = () => {
                     </Link>
                 </div>
         </div>
+        <Toaster/>
         </>
     )
 }

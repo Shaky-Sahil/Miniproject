@@ -4,8 +4,11 @@ import { maptiler } from 'pigeon-maps/providers'
 import { Map, Marker, Overlay, ZoomControl } from 'pigeon-maps'
 import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
+import { SiGooglemaps } from 'react-icons/si';
+
 import trees1 from "../images/trees1.png"
 import { Link } from "react-router-dom";
+import Bottomnav from './Bottomnav';
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -13,10 +16,9 @@ function Mapview() {
 
 
 function mapTiler (x, y, z, dpr) {
-  //return `https://api.maptiler.com/maps/${MAP_ID}/256/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?key=${MAPTILER_ACCESS_TOKEN}`
-  //return `https://{s}.basemaps.cartocdn.com/dark_all/${z}/${x}/${y}{r}.png`
-  return `https://tile.jawg.io/jawg-light/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
-  //return `https://tile.jawg.io/5cbaaabc-fad9-4b10-85cc-83a4d9c38c44/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
+  
+  return `https://tile.jawg.io/jawg-dark/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
+  
 }
 
 const [coordinates,setCoordinates] = useState([8.5241,76.9366])
@@ -55,19 +57,20 @@ const handleExpand = event => {
 };
 
   return (
-    <>
-    {/* <img className="kaiju" src={dannyy}></img> */}
-    <div className="App">
+    <div className='home'>
+    {/* <img className="user-bg" src={trees1}></img> */}
+    <div>
       Mini project
-      <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
-    <Map  className='map'  defaultCenter={[8.5039,76.9511]} provider={mapTiler} defaultZoom={13}>
-      
+      <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
+    <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
       <ZoomControl/>      
       {locations.map((l,i)=>(
-      <Marker key={i} width={50} color='black' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}/>
+      <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}>
+        <SiGooglemaps size={25} onClick={()=>{alert(l.placeName)}} color='white'/>
+      </Overlay>
       ))}  
       <Overlay anchor={coordinates}>
-      <RiMapPinUserFill size={50}/>
+      <RiMapPinUserFill size={30} color="orange"/>
       </Overlay>
       </Map>
     </div>
@@ -75,13 +78,16 @@ const handleExpand = event => {
         Expand
       </div>
     </div>
-    <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
+    {/* <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
     <button className="user-btn">User Profile</button>
     </Link>
     <Link style={{textDecoration:"none", color:"Black"}}to="/location">
     <button className='loc-btn'>locations</button>
-    </Link>
-    </>
+    </Link> */}
+    <div className="grid-container">
+    </div>
+    <Bottomnav/>
+    </div>
   );
 }
 
