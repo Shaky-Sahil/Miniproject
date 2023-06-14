@@ -62,6 +62,7 @@ export const Register = () => {
                     </Link>
                 </div>
         </div>
+        <Toaster/>
         </>
     )
 }

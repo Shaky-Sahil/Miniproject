@@ -68,6 +68,7 @@ export const Loginform = () => {
                 <Text />
             </div>
         </div>
+        <Toaster/>
     </>
     )
 }
