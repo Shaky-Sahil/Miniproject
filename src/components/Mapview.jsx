@@ -78,12 +78,18 @@ const handleExpand = event => {
         Expand
       </div>
     </div>
-    <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
+    {/* <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
     <button className="user-btn">User Profile</button>
     </Link>
     <Link style={{textDecoration:"none", color:"Black"}}to="/location">
     <button className='loc-btn'>locations</button>
-    </Link>
+    </Link> */}
+    <div className="grid-container">
+      <div className="grid-item">View Locations</div>
+      <div className="grid-item">Browse by Category</div>
+      <div className="grid-item">Browse services</div>
+      <div className="grid-item">View Full Map</div>
+    </div>
     <Bottomnav/>
     </>
   );
