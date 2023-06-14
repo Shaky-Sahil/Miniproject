@@ -56,7 +56,7 @@ const handleExpand = event => {
 
   return (
     <>
-    <img className="user-bg" src={trees1}></img>
+    {/* <img className="kaiju" src={dannyy}></img> */}
     <div className="App">
       Mini project
       <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>

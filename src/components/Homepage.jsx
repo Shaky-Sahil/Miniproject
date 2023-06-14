@@ -77,7 +77,7 @@ export const Homepage = () => {
                     <img className="safety" src={safety}></img>
                     <br></br>Our Core Feature Is That Our App Contains Only the Most Trusted Locations In Trivandrum.
                     Safety Is Our Most Prominent Feature. Unlike Other Apps, There Aren't Any Sponored Locations. All Locations
-                    Are Visited And Verified My Our Team. </p>
+                    Are Visited And Verified By Our Team. </p>
                     <p className="features-para2"><img className="safety" src={hand}></img> 
                     <br></br>Unlike Other Tour Guide Books Or Map Based Apps, All Our Locations Are Hand-Picked By Our Developers.
                     Each Of Which Were Picked On The Bases Of Its Security, Quality And Reachability.</p>
