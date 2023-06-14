@@ -6,6 +6,8 @@ import "./Location.css"
 import trees1 from "../images/trees1.png"
 import { BottomNavigation } from '@mui/material';
 import Bottomnav from './Bottomnav';
+import home1 from "../images/home3.png"
+import home2 from "../images/home1.jpg"
 
 const Location = () => {
     const images = [
@@ -36,16 +38,18 @@ const Location = () => {
     
       return (
         <>
-        <img className="loc-bg" src={trees1}></img>
+        <img className="loc2-bg" src={home2}></img>
+          <img className="loc3-bg" src={home1}></img>
          <div className="main">
-        <div className='Location'>
-          <div className="image-slider">
-            <Slider {...settings}>
-              {images.map((image, index) => (
-                <div key={index}>
-                  <img className="hi" src={image} alt={`Slide ${index + 1}`} />
-                </div>
-              ))}
+          
+          <div className='Location'>
+            <div className="image-slider">
+              <Slider {...settings}>
+                {images.map((image, index) => (
+                  <div key={index}>
+                    <img className="hi" src={image} alt={`Slide ${index + 1}`} />
+                  </div>
+                ))}
             </Slider>
             
           <div className='header1'>
@@ -64,6 +68,7 @@ const Location = () => {
             </div>
           </div>
         </div>
+        
         <div className='paradiv'>
           <p style={{textAlign:'left'}}>
           Lip-smacking shawarma served with loads of precision and hygiene has become everyone's favorite in no time.
@@ -73,6 +78,7 @@ const Location = () => {
         </div>
         <button className='btn'>GET DIRECTIONS</button>
         </div>
+        
        <Bottomnav/>
         </>
       );

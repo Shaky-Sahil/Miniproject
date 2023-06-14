@@ -7,6 +7,7 @@ import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
+import trees1 from "../images/trees1.png"
 
 
 export const Loginform = () => {
@@ -55,7 +56,7 @@ export const Loginform = () => {
     return(
     <> 
         <div className="login">
-             <div style={myStyle1}></div>
+        <img className="user-bg" src={trees1}></img>
             <div  className="auth">
                 {/* <img className="loginlogo" src={a1}></img> */}
                 <h2 className="loginTitle">LOGIN</h2>

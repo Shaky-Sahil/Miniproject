@@ -120,13 +120,10 @@ export const Homepage = () => {
                     <h1 className="xplr-header">XPLR</h1>
                     <div>
                         <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
-                            <button className="button-universal">LOGIN</button>
-                        </Link> //  
+                            <button className="button-universal1">LOGIN</button> /
+                        </Link> 
                         <Link style={{textDecoration:"none", color:"Black"}}to="/register">
-                            <button className="button-universal">SIGN UP</button><br></br><br></br>
-                        </Link>
-                        <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
-                            <button className="button-universal">ENTER AS ADMIN</button>
+                              <button className="button-universal1">SIGN UP</button><br></br><br></br>
                         </Link>
                     </div>
                 </ParallaxLayer>

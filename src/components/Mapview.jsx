@@ -5,7 +5,8 @@ import { Map, Marker, Overlay, ZoomControl } from 'pigeon-maps'
 import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
 import { SiGooglemaps } from 'react-icons/si';
-
+import home1 from "../images/home3.png"
+import home2 from "../images/home1.jpg"
 import trees1 from "../images/trees1.png"
 import { Link } from "react-router-dom";
 import Bottomnav from './Bottomnav';
@@ -58,9 +59,10 @@ const handleExpand = event => {
 
   return (
     <div className='home'>
-    {/* <img className="user-bg" src={trees1}></img> */}
+      <img className="home2-bg" src={home2}></img>
+    <img className="home-bg" src={home1}></img>
+    
     <div>
-      Mini project
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
       {locations.map((l,i)=>(

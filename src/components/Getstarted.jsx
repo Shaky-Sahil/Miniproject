@@ -2,7 +2,7 @@ import React from "react"
 import "./Getstarted.css"
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo4.png"
-
+import trees1 from "../images/trees1.png"
 
 export const Getstarted = () => {
     const navigate = useNavigate()
@@ -15,8 +15,10 @@ export const Getstarted = () => {
 
     return(
         <> 
-        <div className="getstarted-css" style={myStyle1}>
+         <img className="start-bg" src={trees1}></img>
+        <div className="getstarted-css" >
         <img className="starting-image" src={logo}></img>
+       
                 <h1 className="getstarted-css">
                      
                 </h1>

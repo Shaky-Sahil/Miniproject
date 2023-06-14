@@ -1,5 +1,4 @@
 
-
 .register{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -7,6 +6,8 @@
     height:100vh;
     align-items: center;
     justify-content: center; 
+    background-color: black;
+    overflow: hidden;
   }
   
   .register-form{
@@ -21,7 +22,7 @@
     height: 400px;
     position: absolute;
     border-radius: 10px;
-    box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
+    box-shadow: 0 0.188em 1.00em rgb(255, 255, 255);
     
   }
 
@@ -74,4 +75,12 @@
   .registerTitle{
     margin-top: -25px;
     margin-bottom: 25px;
+  }
+
+  .register-bg{
+    position: absolute;
+    width: 270%;
+    margin-right: 10%;
+    background-color: black;
+    padding-top: 70%;
   }

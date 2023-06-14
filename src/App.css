@@ -17,8 +17,10 @@
 }
 
 
+
 .map-cont{
- 
+ padding-top: 5%;
+ border-radius: 70%;
   height: 30vh;
   width: 90vw;
   margin-left: 5vw;
@@ -26,6 +28,8 @@
 
 .exp-map-cont{
   
+  padding-top: 5%;
+ border-radius: 70%;
   height: 75vh;
   width: 90vw;
   margin-left: 5vw;
@@ -52,6 +56,21 @@
   border-radius: 10%;
   cursor:pointer;
   transition: 0.5s;
+}
+
+.home-bg{
+  position: absolute;
+  width: 100%;
+  margin-top: 0%;
+  opacity: 60%;
+  padding-top: 40%;
+}
+
+.home2-bg{
+  position: absolute;
+  width: 100%;
+  margin-top: 120%;
+  opacity: 100%
 }
 
 .loc-btn{

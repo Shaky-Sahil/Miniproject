@@ -2,9 +2,12 @@ import React from 'react'
 import { useState,useRef } from 'react';
 import "./Userprofile.css"
 import trees1 from "../images/trees1.png"
-import logo from "../images/logo3.jpg"
+import logo from "../images/logo5.png"
+import profile from "../images/profile.png"
 import { Link } from "react-router-dom";
 import Bottomnav from './Bottomnav';
+import home1 from "../images/home3.png"
+import home2 from "../images/home1.jpg"
 
 const Userprofile = () => {
     
@@ -35,8 +38,10 @@ const Userprofile = () => {
     
       return (  
         <>
-          <img className="user-bg" src={trees1}></img>
+           <img className="home2-bg" src={home2}></img>
+          <img className="home-bg" src={home1}></img>
           <img className="userpage-image" src={logo}></img>
+          <img className="profile-image" src={profile}></img>
           <div className="profile-screen">
             <div className="profile-content">
               <h1 className='profile'>Profile</h1>
