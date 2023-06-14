@@ -62,7 +62,7 @@ const handleExpand = event => {
     <div>
       Mini project
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
-    <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
+    <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
       <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}>
         <SiGooglemaps size={25} onClick={()=>{alert(l.placeName)}} color='white'/>
@@ -77,12 +77,6 @@ const handleExpand = event => {
     {isActive ? 'Minimize' : 'Expand'}
       </div>
     </div>
-    {/* <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
-    <button className="user-btn">User Profile</button>
-    </Link>
-    <Link style={{textDecoration:"none", color:"Black"}}to="/location">
-    <button className='loc-btn'>locations</button>
-    </Link> */}
     <div className="grid-container">
     </div>
     <Bottomnav/>
