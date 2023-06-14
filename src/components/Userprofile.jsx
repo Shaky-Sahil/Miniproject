@@ -3,7 +3,7 @@ import { useState,useRef } from 'react';
 import "./Userprofile.css"
 import trees1 from "../images/trees1.png"
 import logo from "../images/logo5.png"
-import profile from "../images/profile.png"
+import profile from "../images/profile2.png"
 import { Link } from "react-router-dom";
 import Bottomnav from './Bottomnav';
 import home1 from "../images/home3.png"

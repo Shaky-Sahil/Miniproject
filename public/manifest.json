@@ -1,10 +1,6 @@
 {
   "short_name": "XPLR",
-<<<<<<< HEAD
-  "name": "EMBARK ON YOUR NEXT JOURNEY WITH XPLR",
-=======
   "name": "Embark on your next journey",
->>>>>>> be2382b4354a4f20461220f35a78cbf6d731727c
   "icons": [
     {
       "src": "favicon.ico",

@@ -10,6 +10,7 @@ import home2 from "../images/home1.jpg"
 import trees1 from "../images/trees1.png"
 import { Link } from "react-router-dom";
 import Bottomnav from './Bottomnav';
+import logo from "../images/logo5.png"
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -61,7 +62,7 @@ const handleExpand = event => {
     <div className='home'>
       <img className="home2-bg" src={home2}></img>
     <img className="home-bg" src={home1}></img>
-    
+    <img className="home-image" src={logo}></img>
     <div>
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>

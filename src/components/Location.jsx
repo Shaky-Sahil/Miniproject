@@ -7,6 +7,7 @@ import trees1 from "../images/trees1.png"
 import { BottomNavigation } from '@mui/material';
 import Bottomnav from './Bottomnav';
 import home1 from "../images/home3.png"
+import logo from "../images/logo5.png"
 import home2 from "../images/home1.jpg"
 
 const Location = () => {
@@ -40,8 +41,9 @@ const Location = () => {
         <>
         <img className="loc2-bg" src={home2}></img>
           <img className="loc3-bg" src={home1}></img>
+         
          <div className="main">
-          
+         <img className="loc-image" src={logo}></img>
           <div className='Location'>
             <div className="image-slider">
               <Slider {...settings}>

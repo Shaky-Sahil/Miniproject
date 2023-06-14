@@ -66,10 +66,8 @@ export const Loginform = () => {
                     <label htmlFor="password">Password:</label>
                     <input  type="password" placeholder="Password" id="password" name="userPassword" {...register('userPassword')} />
                     <button className="button-universal" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
-                    
-                        <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
-                 
                 </form> 
+                <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
                 <Text />
             </div>
         </div>
