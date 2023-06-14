@@ -1,20 +1,40 @@
-import React, { Component, useState, usestate } from "react"
+import React, { Component, useState,useEffect } from "react"
 import "./Loginform.css"
 import { Text } from "./Text"
 import a1 from "../images/logo2.png"
-import videoBg from '../images/videoBg.mp4'
-import { Link } from "react-router-dom";
+import { Link, useFormAction } from "react-router-dom";
+import axios from 'axios';
+import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form"
 
 export const Loginform = () => {
-    
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+  const {register, handleSubmit} = useForm()
+  const navigate = useNavigate()
+  const [authenticated, setauthenticated] = useState(null)
 
-    const handleSubmit = (e) =>{
-        e.preventDefault();
-        console.log(email);
-    }
-    
+  useEffect(()=>{
+    const loggedInUser = localStorage.getItem("authenticated");
+    setauthenticated(loggedInUser)
+},[])
+
+  const handleLogin = (data) => {
+    axios.post('http://localhost:6901/login',data).then((response)=>{
+      console.log(response.data.user.isAdmin)
+      localStorage.setItem("authenticated", true);
+      localStorage.setItem("token",response.data.token)
+      localStorage.setItem("isAdmin",response.data.user.isAdmin)
+      
+        
+        navigate("/")
+      
+    })
+    .catch(()=>{
+      toast.error('Invalid Credentials');
+      console.log("something went wrong")
+      navigate("/loginform")
+    })
+  }
     const myStyle={
         backgroundImage: "url('https://a-static.besthdwallpaper.com/green-leaves-with-black-shadow-wallpaper-2048x1536-78534_26.jpg')",
         backgroundSize: 'cover'
@@ -31,24 +51,19 @@ export const Loginform = () => {
     return(
     <> 
         <div className="login">
-            {/* <div className="video-class">
-                <video src={videoBg} autoPlay loop muted />
-            </div> */}
              <div style={myStyle1}></div>
             <div  className="auth">
                 {/* <img className="loginlogo" src={a1}></img> */}
                 <h2 className="loginTitle">LOGIN</h2>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>
-                    <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                    <input  type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>
-                    <input value={pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="Password" id="password" name="password" />
-                    <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
-                        <button className="login-button">Login</button>
-                    </Link>
-                    <Link style={{textDecoration:"none", color:"Black"}}to="/register">
-                        <button className="link">Register now</button>
-                    </Link>
+                    <input  type="password" placeholder="Password" id="password" name="password" {...register('userPassword')} />
+                    <button className="button-universal" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
+                    
+                        <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
+                 
                 </form> 
                 <Text />
             </div>

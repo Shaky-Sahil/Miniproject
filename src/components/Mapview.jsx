@@ -6,6 +6,8 @@ import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
 import { SiGooglemaps } from 'react-icons/si';
 
+import trees1 from "../images/trees1.png"
+import { Link } from "react-router-dom";
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -55,9 +57,11 @@ const handleExpand = event => {
 };
 
   return (
+    <>
+    <img className="user-bg" src={trees1}></img>
     <div className="App">
       Mini project
-      <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
+      <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
       <ZoomControl/>      
       {locations.map((l,i)=>(
@@ -74,6 +78,13 @@ const handleExpand = event => {
         Expand
       </div>
     </div>
+    <Link style={{textDecoration:"none", color:"Black"}}to="/userprofile">
+    <button className="user-btn">User Profile</button>
+    </Link>
+    <Link style={{textDecoration:"none", color:"Black"}}to="/location">
+    <button className='loc-btn'>locations</button>
+    </Link>
+    </>
   );
 }
 

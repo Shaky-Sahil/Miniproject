@@ -11,6 +11,7 @@ import Userprofile from './components/Userprofile';
 import Location from './components/Location';
 import Mapview from './components/Mapview'
 import { Getstarted } from './components/Getstarted'
+import { Homepage } from './components/Homepage'
 
 function App() {
 
@@ -18,16 +19,16 @@ function App() {
     <>
  
     <div className='App'> 
-    {/* <Userprofile/> */}
+    {/* <Mapview /> */}
     <BrowserRouter>
     <Routes>
-      <Route path='/'element={<Mapview/>}></Route>
-      <Route path='cardone'element={<Cardone/>}></Route>
-      <Route path='/cardtwo'element={<Cardtwo/>}></Route>
-      <Route path='/cardthree'element={<Cardthree/>}></Route>
+      <Route path='/'element={<Getstarted/>}></Route>
+      <Route path='homepage'element={<Homepage/>}></Route>
+      <Route path='/mapview'element={<Mapview />}></Route>
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
-      <Route path='/mapview'element={<Mapview />}></Route>
+      <Route path='/location'element={<Location />}></Route>
+      <Route path='/userprofile'element={<Userprofile />}></Route>
     </Routes>
   </BrowserRouter> 
     </div>

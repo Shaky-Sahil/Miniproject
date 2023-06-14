@@ -1,7 +1,7 @@
 import React from "react"
 import "./Getstarted.css"
 import { Link } from "react-router-dom";
-import logo from "../images/logo2.png"
+import logo from "../images/logo4.png"
 
 export const Getstarted = () => {
 
@@ -19,9 +19,11 @@ export const Getstarted = () => {
                 <h1 className="getstarted-css">
                      
                 </h1>
-                <Link style={{textDecoration:"none", color:"Black"}}to="/cardone">
-                        <button className="get-button">EMBARK</button>
+                <div className="get-button">
+                <Link style={{textDecoration:"none", color:"Black"}}to="/homepage">
+                        <button className="embark">EMBARK</button>
                 </Link>
+                </div>
             </div>
         </>
     )
