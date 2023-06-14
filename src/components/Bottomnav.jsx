@@ -11,7 +11,7 @@ const Bottomnav = () => {
   return (
     <div>
       <BottomNavigation
-      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,bgcolor:'black' }} 
+      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,bgcolor:'black'}} 
   showLabels
 >
   <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/mapview')}}

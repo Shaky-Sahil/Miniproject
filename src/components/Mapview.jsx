@@ -63,7 +63,6 @@ const handleExpand = event => {
       Mini project
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
-      <ZoomControl/>      
       {locations.map((l,i)=>(
       <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}>
         <SiGooglemaps size={25} onClick={()=>{alert(l.placeName)}} color='white'/>
