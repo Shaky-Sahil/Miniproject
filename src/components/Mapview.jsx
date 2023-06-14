@@ -57,9 +57,9 @@ const handleExpand = event => {
 };
 
   return (
-    <>
+    <div className='home'>
     {/* <img className="user-bg" src={trees1}></img> */}
-    <div className="App">
+    <div>
       Mini project
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  defaultCenter={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false}>
@@ -91,7 +91,7 @@ const handleExpand = event => {
       <div className="grid-item">View Full Map</div>
     </div>
     <Bottomnav/>
-    </>
+    </div>
   );
 }
 

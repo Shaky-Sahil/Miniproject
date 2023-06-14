@@ -4,6 +4,7 @@ import "./Userprofile.css"
 import trees1 from "../images/trees1.png"
 import logo from "../images/logo3.jpg"
 import { Link } from "react-router-dom";
+import Bottomnav from './Bottomnav';
 
 const Userprofile = () => {
     
@@ -61,6 +62,7 @@ const Userprofile = () => {
           <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
           <button className="more-loc">GET YOUR NEXT WILD JOURNEY</button>
           </Link>
+          <Bottomnav/>
         </>
       );
 }
