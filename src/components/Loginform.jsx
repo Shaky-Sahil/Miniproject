@@ -8,6 +8,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
 
+
 export const Loginform = () => {
   const {register, handleSubmit} = useForm()
   const navigate = useNavigate()
@@ -24,9 +25,12 @@ export const Loginform = () => {
       localStorage.setItem("authenticated", true);
       localStorage.setItem("token",response.data.token)
       localStorage.setItem("isAdmin",response.data.user.isAdmin)
-      
-        
+      toast.success("Logged in successfully")
+      setTimeout(() => {
         navigate("/mapview")
+      }, 1000);
+        
+
       
     })
     .catch(()=>{
