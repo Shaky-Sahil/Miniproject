@@ -12,6 +12,7 @@ import Location from './components/Location';
 import Mapview from './components/Mapview'
 import { Getstarted } from './components/Getstarted'
 import { Homepage } from './components/Homepage'
+import { Trial } from './components/Trial'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
     <>
  
     <div className='App'> 
-    {/* <Mapview /> */}
+    
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>
@@ -31,6 +32,7 @@ function App() {
       <Route path='/userprofile'element={<Userprofile />}></Route>
     </Routes>
   </BrowserRouter> 
+  
     </div>
     </>
   );
