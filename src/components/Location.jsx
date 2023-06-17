@@ -9,8 +9,10 @@ import Bottomnav from './Bottomnav';
 import home1 from "../images/home3.png"
 import logo from "../images/logo5.png"
 import home2 from "../images/home1.jpg"
+import { useNavigate } from 'react-router-dom';
 
 const Location = () => {
+  const navigate = useNavigate();
     const images = [
         'https://b.zmtcdn.com/data/pictures/3/20224803/a4e73166f95176b77b6451149d1bd2f5.jpeg',
         'https://img.restaurantguru.com/c0da-Restaurant-Al-Taza-Trivandrum-food.jpg',
@@ -78,7 +80,7 @@ const Location = () => {
           <p className="para2" style={{textAlign:'left'}}>Our efforts and promises are on maintaining the consistency to serve our customers, the amazing mouth watering delicacy. Offering an exclusive and focused menu packed with Lebanese favorites and contemporary dishes, Al Taza has undoubtedly become the household name of Shawarma for Keralites since 2019. We have our exclusive outlets in Aluva, Edappally, Kaloor, Kalamassery, Perumbavoor, Calicut, Thiruvananthapuram, Kollam and Bangalore.
             </p>
         </div>
-        <button className='btn'>GET DIRECTIONS</button>
+        <button className='btn' onClick={()=>{navigate('/navigate')}}>GET DIRECTIONS</button>
         </div>
         
        <Bottomnav/>

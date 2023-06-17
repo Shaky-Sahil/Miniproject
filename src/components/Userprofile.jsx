@@ -38,10 +38,10 @@ const Userprofile = () => {
     
       return (  
         <>
-           <img className="home2-bg" src={home2}></img>
+           {/* <img className="home2-bg" src={home2}></img>
           <img className="home-bg" src={home1}></img>
           <img className="userpage-image" src={logo}></img>
-          <img className="profile-image" src={profile}></img>
+          <img className="profile-image" src={profile}></img> */}
           <div className="profile-screen">
             <div className="profile-content">
               <h1 className='profile'>Profile</h1>
