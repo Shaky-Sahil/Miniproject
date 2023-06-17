@@ -7,11 +7,12 @@ import { RiMapPinUserFill } from 'react-icons/ri';
 import { SiGooglemaps } from 'react-icons/si';
 import home1 from "../images/home3.png"
 import home2 from "../images/home1.jpg"
-import trees1 from "../images/trees1.png"
 import { Link } from "react-router-dom";
 import Bottomnav from './Bottomnav';
 import logo from "../images/logo5.png"
+import walk from "../images/walk.png"
 import { Trial } from './Trial'
+import Slider from 'react-slick';
 
 function Mapview() {
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
@@ -59,6 +60,24 @@ const handleExpand = event => {
   setIsActive(current => !current);
 };
 
+const images = [
+  "https://static.tnn.in/thumb/msid-92690199,width-1280,height-720,resizemode-75/92690199.jpg",
+  "https://b.zmtcdn.com/data/pictures/1/19831241/0bc1d316b2d4bb98b2cc9f2755fafeb0.png"
+        
+      ];
+    
+      const settings = {
+        dots: true,
+        // dotsClass: 'slider-dots', // Custom class for dots container
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        
+      };
+
   return (
     <>
     
@@ -67,7 +86,7 @@ const handleExpand = event => {
     <img className="home-bg" src={home1}></img>
     <img className="home-image" src={logo}></img>
     <div>
-    <Trial />
+    {/* <Trial /> */}
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
@@ -86,6 +105,25 @@ const handleExpand = event => {
     </div>
     <div className="grid-container">
     </div>
+          <div className='Location5'>
+            <div className="image-slider-home">
+              <Slider {...settings}>
+                {images.map((image, index) => (
+                  <div key={index}>
+                    <img className="hi" src={image} alt={`Slide ${index + 1}`} />
+                  </div>
+                ))}
+            </Slider>
+            </div>
+            </div>
+            <div>
+            {/* <img className="walk" src={walk}></img> */}
+              <h1 className='home-text1'>Locations for You</h1>
+              
+              <button className='button-universal11'>click here</button>
+            </div>
+          
+            
     <Bottomnav/>
     
     </div>

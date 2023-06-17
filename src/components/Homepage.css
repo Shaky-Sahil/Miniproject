@@ -1,3 +1,4 @@
+
 .Homepage{
     text-align: center;
     background-color: black;
@@ -5,11 +6,12 @@
     color: white;
     display: grid;
     place-content: center;
- 
+    
     
 }
 
 .Home-logo{
+    
     width: 20vw;
     margin-top: 20px;
 

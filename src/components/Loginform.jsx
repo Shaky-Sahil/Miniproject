@@ -72,7 +72,7 @@ export const Loginform = () => {
             </div>
         </div>
         <Toaster/>
-        <Trial />
+        {/* <Trial /> */}
     </>
     )
 }

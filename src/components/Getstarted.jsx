@@ -28,7 +28,7 @@ export const Getstarted = () => {
                         <button className="embark" onClick={()=>navigate('/homepage')}>EMBARK</button>
                 </div>
             </div>
-            <Trial />
+            {/* <Trial /> */}
         </>
     )
 }

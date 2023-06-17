@@ -11,7 +11,7 @@ export const Trial = () => {
     src: [background],
     html5: true,
     loop: true,
-    
+    autoplay: true,
   });
 
 
@@ -21,6 +21,7 @@ export const Trial = () => {
     <img onClick={() => sound.play()} className="play" src={play}></img>
     </div>
     <div className="song2">
+      
     <img onClick={() => sound.pause()} className="pause" src={pause}></img>
     </div>
   </>
