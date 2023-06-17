@@ -27,6 +27,10 @@ function mapTiler (x, y, z, dpr) {
 const [coordinates,setCoordinates] = useState([8.5241,76.9366])
 const [locations,setLocations] = useState([])
 const [isActive, setIsActive] = useState(false);
+const [dialogOpen, setDialogOpen] = useState(false);
+const [locName, setLocName] = useState('');
+
+
 const screenWidth = window.innerWidth
 const successCallback = (position) => {
   console.log(position);
@@ -59,6 +63,15 @@ const handleExpand = event => {
   setIsActive(current => !current);
 };
 
+const handleMarkerClick = (name) => {
+  setLocName(name)
+  setDialogOpen(true);
+};
+
+const handleDialogClose = () => {
+  setDialogOpen(false);
+};
+
   return (
     <>
     
@@ -70,13 +83,21 @@ const handleExpand = event => {
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
-      <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}>
-        <SiGooglemaps size={25} onClick={()=>{alert(l.placeName)}} color='white'/>
+      <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{handleMarkerClick()}}>
+        <SiGooglemaps size={25} onClick={()=>{handleMarkerClick(l.placeName)}} color='white'/>
       </Overlay>
       ))}  
+      {dialogOpen && (
+        <dialog open={dialogOpen} onClose={handleDialogClose}>
+          {/* Dialog content */}
+          <h1>{locName}</h1>
+          <p>Content of the dialog goes here.</p>
+        </dialog>
+      )}
       <Overlay anchor={coordinates}>
       <RiMapPinUserFill size={30} color="orange"/>
       </Overlay>
+      
       </Map>
     </div>
     <div className='exp' onClick={handleExpand}>

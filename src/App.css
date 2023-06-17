@@ -19,9 +19,9 @@
 
 .map-cont{
  
-  height: 30vh;
-  width: 90vw;
-  margin-left: 5vw;
+  height: 90vh;
+  width: 100vw;
+  /* margin-left: 5vw; */
 }
 
 .exp-map-cont{
@@ -32,6 +32,7 @@
 }
 
 .exp{
+  visibility: hidden;
   position: absolute;
   width: 90vw;
   margin-left: 5vw;
