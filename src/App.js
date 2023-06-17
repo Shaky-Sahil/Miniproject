@@ -13,6 +13,7 @@ import Mapview from './components/Mapview'
 import { Getstarted } from './components/Getstarted'
 import { Homepage } from './components/Homepage'
 import Routeview from './Routeview'
+import Listlocations from './components/Listlocations'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
       <Route path='/location'element={<Location />}></Route>
+      <Route path='/list'element={<Listlocations />}></Route>
+
       <Route path='/userprofile'element={<Userprofile />}></Route>
       <Route path='/navigate'element={<Routeview/>}></Route>
     </Routes>

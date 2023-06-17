@@ -159,3 +159,13 @@ dialog{
   border-radius: 2.5vh;
   margin-top: 10vh;
 }
+.list{
+  background-color: rgb(37, 36, 36)
+}
+
+.lst-item{
+  height: 10vh;
+  width: 90vw;
+  background-color: red;
+  margin: 1vh;
+}

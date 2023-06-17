@@ -16,7 +16,7 @@ const Bottomnav = () => {
 >
   <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/mapview')}}
   sx={{color:'white'}}/>
-  <BottomNavigationAction label="location" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/location')}}
+  <BottomNavigationAction label="location" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/list')}}
   sx={{color:'white'}}/>
   <BottomNavigationAction label="Profile" icon={<FaUserAlt color='white'/>} onClick={()=>{navigate('/userprofile')}}
   sx={{color:'white'}}/>
