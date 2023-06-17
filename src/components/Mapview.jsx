@@ -63,11 +63,10 @@ const handleExpand = event => {
     <>
     
     <div className='home'>
-      <img className="home2-bg" src={home2}></img>
+      {/* <img className="home2-bg" src={home2}></img>
     <img className="home-bg" src={home1}></img>
-    <img className="home-image" src={logo}></img>
+    <img className="home-image" src={logo}></img> */}
     <div>
-    <Trial />
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(

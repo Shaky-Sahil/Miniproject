@@ -29,7 +29,7 @@ const Routeview = () => {
     }
   }, []);
 
-  return <div id="map" style={{ width: '100%', height: '400px' }} />;
+  return <div id="map" style={{ width: '100%', height: '90vh' }} />;
 };
 
 export default Routeview;
