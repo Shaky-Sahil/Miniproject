@@ -31,10 +31,10 @@ const Routeview = () => {
   }, []);
 
   return (
-    <>
-  <div id="map" style={{ width: '100%', height: '90vh' }} />
+    <div>
+  <div id="map" style={{ width: '100%', height: '93.5vh' }} />
   <Bottomnav/>
-  </>
+  </div>
   );
 };
 

@@ -84,6 +84,9 @@ const handleDialogClose = () => {
         <SiGooglemaps size={25} onClick={()=>{handleMarkerClick(l.placeName)}} color='white'/>
       </Overlay>
       ))}  
+       <Overlay anchor={coordinates}>
+      <RiMapPinUserFill size={30} color="orange"/>
+      </Overlay>
       {dialogOpen && (
         <dialog open={dialogOpen} onClose={handleDialogClose}>
           {/* Dialog content */}
@@ -91,9 +94,7 @@ const handleDialogClose = () => {
           <p>Content of the dialog goes here.</p>
         </dialog>
       )}
-      <Overlay anchor={coordinates}>
-      <RiMapPinUserFill size={30} color="orange"/>
-      </Overlay>
+     
       
       </Map>
     </div>

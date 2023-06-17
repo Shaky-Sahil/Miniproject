@@ -14,9 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const Location = () => {
   const navigate = useNavigate();
     const images = [
-        'https://b.zmtcdn.com/data/pictures/3/20224803/a4e73166f95176b77b6451149d1bd2f5.jpeg',
-        'https://img.restaurantguru.com/c0da-Restaurant-Al-Taza-Trivandrum-food.jpg',
-        // Add more image URLs as needed
+        logo,home1
       ];
     
       const settings = {
@@ -24,11 +22,12 @@ const Location = () => {
         // dotsClass: 'slider-dots', // Custom class for dots container
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        
+        arrows: false,
+        fade:true,
       };
 
     //   const myStyle1={
@@ -48,14 +47,13 @@ const Location = () => {
          <img className="loc-image" src={logo}></img>
           <div className='Location'>
             <div className="image-slider">
-              <Slider {...settings}>
+            <Slider {...settings}>
                 {images.map((image, index) => (
                   <div key={index}>
-                    <img className="hi" src={image} alt={`Slide ${index + 1}`} />
+                    <img className="hi" src={image} />
                   </div>
                 ))}
             </Slider>
-            
           <div className='header1'>
             <h1 style={{textAlign:'left'}}>Al Taza</h1>
           </div>
