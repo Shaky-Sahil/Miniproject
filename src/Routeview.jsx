@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
 import './App.css'
+import Bottomnav from './components/Bottomnav';
 
 const Routeview = () => {
   useEffect(() => {
@@ -29,7 +30,12 @@ const Routeview = () => {
     }
   }, []);
 
-  return <div id="map" style={{ width: '100%', height: '90vh' }} />;
+  return (
+    <>
+  <div id="map" style={{ width: '100%', height: '90vh' }} />
+  <Bottomnav/>
+  </>
+  );
 };
 
 export default Routeview;
