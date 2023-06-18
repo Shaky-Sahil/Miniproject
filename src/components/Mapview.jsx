@@ -7,14 +7,17 @@ import { RiMapPinUserFill } from 'react-icons/ri';
 import { SiGooglemaps } from 'react-icons/si';
 import home1 from "../images/home3.png"
 import home2 from "../images/home1.jpg"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Bottomnav from './Bottomnav';
 import logo from "../images/logo5.png"
 import walk from "../images/walk.png"
 import { Trial } from './Trial'
 import Slider from 'react-slick';
+import { Topnav } from './Topnav';
 
 function Mapview() {
+
+  const navigate = useNavigate()
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
   const MAP_ID = 'streets'
 
@@ -76,7 +79,8 @@ const handleDialogClose = () => {
   return (
     <>
     
-    <div>
+    <div >
+      
       <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
@@ -88,14 +92,16 @@ const handleDialogClose = () => {
       <RiMapPinUserFill size={30} color="orange"/>
       </Overlay>
       {dialogOpen && (
-        <dialog open={dialogOpen} onClose={handleDialogClose}>
+        <dialog open={dialogOpen} onClose={handleDialogClose} onClick={handleDialogClose}>
           {/* Dialog content */}
           <h1>{locName}</h1>
           <p>Content of the dialog goes here.</p>
+          <button onClick={handleDialogClose}>close</button>
+          <button onClick={()=>{navigate('/location')}}>View More</button>
         </dialog>
       )}
      
-      
+     <Topnav/>
       </Map>
     </div>
     <div className='exp' onClick={handleExpand}>

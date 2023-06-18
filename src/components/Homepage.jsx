@@ -84,12 +84,12 @@ export const Homepage = () => {
 
                     <p className="features-para3"><img className="safety" src={loclogo}></img>
                     <br></br>Since Most Map Based Apps Tend To Convey Every Possible Location, Restaurants, Hotels, Parks etc. Our App Instead 
-                    Likes To Dial Down Things And Go For A More Simpler Approach. We Provide You With Less Than 100 Locations To Visit, Which May 
-                    Seem Less But Our Developers Ensures You That These 100 Locations Would Give You A Spectacular Experience.</p>
+                    Likes To Dial Down Things And Go For A More Simpler Approach. We Provide You With 40 Locations To Visit, Which May 
+                    Seem Less But Our Developers Ensures You That These 40 Locations Would Give You A Spectacular Experience.</p>
 
                     <p className="features-para4"><img className="safety" src={game}></img>
                     <br></br>Since Our App Seeks Toward Creating An Exciting Experience For Tourists And Reduce Any Or All Uncertainties Caused By The Locals, We Decided To Gamify Our App
-                    So As To Allow The User To Go On Self Guided Trips. Each User Upon Logging In Gets 100 Locations To Visit, On Visiting Each Location The User Would Get 100 Points.
+                    So As To Allow The User To Go On Self Guided Trips. Each User Upon Logging In Gets 40 Locations To Visit, On Visiting Each Location The User Would Get 100 Points.
                     On Acquiring 10,000 Points, The User Would Complete The Game And Their Reward Would Be That They have Seen The Most Authentic Parts Of Trivandrum</p>
                     
                     <p className="features-para5"><img className="tourist" src={Tourists}></img>

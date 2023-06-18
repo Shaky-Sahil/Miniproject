@@ -93,8 +93,11 @@
 
 /* Custom styling for the directions box */
 .leaflet-routing-container {
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  
+  
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -131,7 +134,7 @@
 
 /* Custom styling for the instruction durations */
 .leaflet-routing-container .leaflet-routing-instruction-duration {
-  color: #888;
+  color: #ffffff;
 }
 
 /* Media query for mobile devices */
@@ -157,6 +160,41 @@ dialog{
   background-color: rgb(0, 0, 0);
   color: white;
   border-radius: 2.5vh;
-  margin-top: 40%;
+  margin-top: 10vh;
+}
+.list{
+ 
+  position: absolute;
+  height: 410%;
+  padding-top: 195%;
+}
+
+.lst-item{
+  position: absolute;
+  height: 10vh;
+  width: 8vw;
+  background-color: red;
+  margin: 1vh;
+}
+
+.list-carousel{
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -179%;
+  color: white;
+}
+
+.loclist{
+  background-color: black;
+  height: 500vh;
+}
+
+.topnav{
+  position: absolute;
+  width: 20%;
+  margin-top: -2%;
+  margin-bottom: 10%;
+  margin-left: 40.3%;
 }
 

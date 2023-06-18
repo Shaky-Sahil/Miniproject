@@ -10,11 +10,13 @@ import home1 from "../images/home3.png"
 import logo from "../images/logo5.png"
 import home2 from "../images/home1.jpg"
 import { useNavigate } from 'react-router-dom';
+import standrews from '../images/standrews.jpg'
+import kudumbu from '../images/kudumbu.jpg'
 
 const Location = () => {
   const navigate = useNavigate();
     const images = [
-        logo,home1
+        standrews,kudumbu
       ];
     
       const settings = {

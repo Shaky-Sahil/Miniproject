@@ -126,7 +126,7 @@
       margin-left: 54%;
       display: flex;
   }
- 
+
   .visited-num{
     position: absolute;
     color: rgb(255, 255, 255);
@@ -157,6 +157,21 @@
     transition: 0.5s;
 }
 
+.visited-swiper{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  margin-top: -97%;
+  font-size: 80%;
+  font-size: 130%;
+  margin-left: 5%;
+  display: flex;
+}
+
+.user-swiper{
+  margin-top: -89%;
+  margin-left: 4%;
+}
+
 .userpage-image{
   position: absolute;
   width: 20%;
@@ -169,4 +184,16 @@
   width: 35%;
   margin-top: 29%;
   margin-left: 33%;
+}
+
+.home2-bg{
+    position: absolute;
+    width: 100vw;
+    margin-top: 50%;
+}
+
+.home-bg{
+  position: absolute;
+  width: 100vw;
+  margin-top: 40%;
 }
