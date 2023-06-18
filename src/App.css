@@ -162,11 +162,15 @@ dialog{
   border-radius: 2.5vh;
   margin-top: 10vh;
 }
+
+.listbg{
+  
+}
+
 .list{
- 
+  background-color: #000000;
   position: absolute;
-  height: 410%;
-  padding-top: 195%;
+  height: 430vh;
 }
 
 .lst-item{
@@ -198,3 +202,14 @@ dialog{
   margin-left: 40.3%;
 }
 
+.list-image1{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.list-image2{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}

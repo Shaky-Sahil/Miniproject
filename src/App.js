@@ -16,6 +16,7 @@ import Routeview from './Routeview'
 import Listlocations from './components/Listlocations'
 import { Topnav } from './components/Topnav'
 import Swiper from './components/Swiper'
+import {Loclist} from './components/Loclist'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       <Route path='/register'element={<Register />}></Route>
       <Route path='/location'element={<Location />}></Route>
       <Route path='/list'element={<Listlocations />}></Route>
-
+      <Route path='/loclist'element={<Loclist />}></Route>
       <Route path='/userprofile'element={<Userprofile />}></Route>
       <Route path='/navigate'element={<Routeview/>}></Route>
     </Routes>
