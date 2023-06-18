@@ -31,6 +31,8 @@ import finest1 from "../images/finest1.jpg"
 import finest2 from "../images/finest2.jpg"
 import finest3 from "../images/finest3.jpg"
 import './Loclist.css'
+import { Developers } from './Developers';
+
 export const Loclist = () => {
     
     const navigate = useNavigate()
@@ -88,7 +90,7 @@ return (
         <h1 style={{fontSize:19, marginTop:30,marginLeft:1}}>XPLR FAVORTIES</h1>  
         <Slider {...settings}>
             {images.map((image, index) => (
-                <div key={index}>
+                <div key={index} onClick={()=>{navigate('/list')}}>
                 <img className="hi" src={image} />
                 </div>
             ))}
@@ -102,10 +104,10 @@ return (
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={category1} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={category2} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={category3} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={category4} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/list')}}><img style={{width:140, borderRadius:1}} src={category1} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/list')}}><img style={{width:140, borderRadius:1}} src={category2} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/list')}}><img style={{width:140, borderRadius:1}} src={category3} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/list')}}><img style={{width:140, borderRadius:1}} src={category4} alt='slide'></img></SwiperSlide>
             <SwiperSlide></SwiperSlide>
         </Swiper>
         <h1 style={{fontSize:19, marginTop:25}}>Locations for you</h1>
@@ -117,22 +119,24 @@ return (
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={kovalam} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={ponmudi} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={jatayu} alt='slide'></img></SwiperSlide>
-            <SwiperSlide><img style={{width:140, borderRadius:7}} src={neyyar} alt='slide'></img></SwiperSlide>
-            <SwiperSlide></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location')}}></SwiperSlide>
         </Swiper>
-        <h1 style={{fontSize:19, marginTop:45, marginBottom:15}}>Trivandrum's Finest</h1>
+        <h1 style={{fontSize:19, marginTop:40, marginBottom:15}}>Trivandrum's Finest</h1>
         <Slider {...setting}>
             {image.map((image, index) => (
-                <div key={index}>
+                <div key={index} onClick={()=>{navigate('/location')}}>
                 <img className="hi" src={image} />
                 </div>
             ))}
         </Slider>
-        <h1 style={{fontSize:19, marginTop:40}}>View All Locations</h1>
+        
+        <h1 style={{fontSize:19, marginTop:50}}>View All Locations</h1>
         <button className='loclist-btn' onClick={()=>{navigate('/list')}}>Click Here</button>
+        <Developers />
         <Bottomnav/>
         </div>
     </div>

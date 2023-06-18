@@ -69,7 +69,7 @@ const Location = () => {
             <div style={{textAlign:'left'}}>
               <h4 className='slider-text'>OVERVIEW :</h4>
             </div>   
-            </div>
+          </div>
           </div>
         </div>
         

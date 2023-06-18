@@ -49,8 +49,8 @@ const Userprofile = () => {
       return (  
         <>
         
-           <img className="home2-bg" src={home2}></img>
-          <img className="home-bg" src={home1}></img>
+           <img className="userbg1" src={home2}></img>
+          <img className="userbg2" src={home1}></img>
           <img className="userpage-image" src={logo}></img>
           <img className="profile-image" src={profile}></img>
           <Bottomnav/>
@@ -72,6 +72,7 @@ const Userprofile = () => {
                   </div>
             </div>
           </div>
+          <div className='xplored'>
           <h1 className="visited-num">15</h1>
           <h1 className="remain-num">25</h1>
           <h1 className="visited">XPLORED</h1>
@@ -80,22 +81,22 @@ const Userprofile = () => {
           <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
           <button className="more-loc">GET YOUR NEXT WILD JOURNEY</button>
           </Link>
-          
+          </div>
           <div className='user-swiper'>
            
           <Swiper
                 modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={140}
+        spaceBetween={90}
         slidesPerView={3}
         
       
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img style={{width:170, borderRadius:7}} src={neyyar} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:170, borderRadius:7}} src={ponmudi} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:170, borderRadius:7}} src={kovalam} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:170, borderRadius:7}} src={jatayu} alt='slide'></img></SwiperSlide>
+        <SwiperSlide><img style={{width:150, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
+        <SwiperSlide><img style={{width:150, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
+        <SwiperSlide><img style={{width:150, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
+        <SwiperSlide><img style={{width:150, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
         <SwiperSlide></SwiperSlide>
       </Swiper>
       </div>

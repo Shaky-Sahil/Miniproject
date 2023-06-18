@@ -2,7 +2,7 @@
     position: absolute;
     color: white;
     background-color: black;
-    height: 150vh;
+    height: 183vh;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@
 .loclist-image-1{
     position: absolute;
     width: 100vw;
-    margin-top: 20vh;
+    margin-top: 2vh;
     height: 100vh;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     width: 100vw;
     margin-top: 43vh;
-    height: 100vh;
+    height: 135vh;
 }
 
 .loclist-image-2{

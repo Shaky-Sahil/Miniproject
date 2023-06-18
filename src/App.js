@@ -17,6 +17,7 @@ import Listlocations from './components/Listlocations'
 import { Topnav } from './components/Topnav'
 import Swiper from './components/Swiper'
 import {Loclist} from './components/Loclist'
+import { Developers } from './components/Developers'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
     <>
  
     <div className='App'> 
-    
+    {/* < Developers /> */}
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>

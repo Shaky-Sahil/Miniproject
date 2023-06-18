@@ -8,15 +8,6 @@
   src: url(../src/fonts/google-sans-cufonfonts-webfont/ProductSans-Bold.woff);
 }
 
-.kaiju{
-  position: absolute;
-  width: 100%;
-  margin-top: 110%;
-  background-color: rgb(255, 255, 255);
-
-}
-
-
 .map-cont{
  
   height: 100vh;
@@ -213,4 +204,23 @@ dialog{
   position: absolute;
   width: 100vw;
   height: 100vh;
+}
+
+.button-map{
+  border: none;
+  margin-right: 3%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.developers-name{
+  color: white;
+  font-size: 90%;
+  margin-left: 18%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }

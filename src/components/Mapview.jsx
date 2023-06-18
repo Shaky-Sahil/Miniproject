@@ -96,8 +96,8 @@ const handleDialogClose = () => {
           {/* Dialog content */}
           <h1>{locName}</h1>
           <p>Content of the dialog goes here.</p>
-          <button onClick={handleDialogClose}>close</button>
-          <button onClick={()=>{navigate('/location')}}>View More</button>
+          <button className='button-map' onClick={handleDialogClose}>close</button>
+          <button className='button-map'onClick={()=>{navigate('/location')}}>View More</button>
         </dialog>
       )}
      
