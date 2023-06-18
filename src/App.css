@@ -93,15 +93,18 @@
 
 /* Custom styling for the directions box */
 .leaflet-routing-container {
-  background-color: #000000;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 10px;
-  
-  
+  height: 50vh;
+  width:30vw;
   padding: 10px;
+  overflow: scroll;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+leaflet-routing-container .leaflet-routing-instructions {
+  font-size: 12px;
+}
 /* Custom styling for the instructions list */
 .leaflet-routing-container .leaflet-routing-instructions-container ul {
   list-style-type: none;
