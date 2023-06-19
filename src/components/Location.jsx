@@ -68,6 +68,9 @@ const Location = () => {
             <h2 className='rating-text'>Excellent</h2>
             <div style={{textAlign:'left'}}>
               <h4 className='slider-text'>OVERVIEW :</h4>
+              <div className='btnclass'>
+              <button className="btn" onClick={()=>{navigate('/navigate')}}>GET DIRECTIONS</button>
+              </div>
             </div>   
           </div>
           </div>
@@ -79,10 +82,9 @@ const Location = () => {
           </p>
           <p className="para2" style={{textAlign:'left'}}>Our efforts and promises are on maintaining the consistency to serve our customers, the amazing mouth watering delicacy. Offering an exclusive and focused menu packed with Lebanese favorites and contemporary dishes, Al Taza has undoubtedly become the household name of Shawarma for Keralites since 2019. We have our exclusive outlets in Aluva, Edappally, Kaloor, Kalamassery, Perumbavoor, Calicut, Thiruvananthapuram, Kollam and Bangalore.
             </p>
+            
         </div>
-        <button className='btn' onClick={()=>{navigate('/navigate')}}>GET DIRECTIONS</button>
         </div>
-        
        <Bottomnav/>
         </>
       );

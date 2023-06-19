@@ -14,9 +14,9 @@ const Bottomnav = () => {
       sx={{ position: 'fixed', bottom: 0, left: 0, right: 0,bgcolor:'black'}} 
   showLabels
 >
-  <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/mapview')}}
+  <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/loclist')}}
   sx={{color:'white'}}/>
-  <BottomNavigationAction label="locations" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/loclist')}}
+  <BottomNavigationAction label="locations" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/mapview')}}
   sx={{color:'white'}}/>
   <BottomNavigationAction label="Profile" icon={<FaUserAlt color='white'/>} onClick={()=>{navigate('/userprofile')}}
   sx={{color:'white'}}/>

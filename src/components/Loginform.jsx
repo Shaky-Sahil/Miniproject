@@ -28,7 +28,7 @@ export const Loginform = () => {
       localStorage.setItem("isAdmin",response.data.user.isAdmin)
       toast.success("Logged in successfully")
       setTimeout(() => {
-        navigate("/mapview")
+        navigate("/loclist")
       }, 1000);
         
 

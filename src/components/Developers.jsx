@@ -13,7 +13,7 @@ import 'swiper/swiper-bundle.css'
 export const Developers = () => {
 
     return(
-        <div className="developers-desc" style={{marginTop:110}}>
+        <div className="developers-desc" style={{marginTop:85}}>
         <h1 style={{fontSize:20, color:"white", marginBottom:20}}>Our Developers</h1>
         <Swiper
                 modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
