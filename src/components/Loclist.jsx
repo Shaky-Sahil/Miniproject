@@ -49,7 +49,7 @@ const images = [
     dots: true,
     // dotsClass: 'slider-dots', // Custom class for dots container
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 1,
     dotsClass:'dots',
     slidesToScroll: 1,
@@ -80,9 +80,9 @@ return (
         <div> 
         <img className="loclist-image-11" src={home2}></img>
 
-            <img className="loclist-image-1" src={home2}></img>
+            {/* <img className="loclist-image-1" src={home2}></img> */}
 
-            <img className="loclist-image-2" src={home1}></img>
+            {/* <img className="loclist-image-2" src={home1}></img> */}
         </div>
         <Topnav/>
         <div className='loclist-carousel-1'>
