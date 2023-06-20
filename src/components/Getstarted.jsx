@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./Getstarted.css"
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo4.png"
@@ -7,12 +7,22 @@ import { Trial } from './Trial'
 
 export const Getstarted = () => {
     const navigate = useNavigate()
+    const [loggedIn,setLoggedIn] = useState(null);
     const myStyle1={
         backgroundImage: "url('https://wallpaperaccess.com/full/5323823.jpg')",
         height: '100vh',
         width: '100%',
         backgroundSize: 'cover',
     };
+    useEffect(()=>{
+        setLoggedIn(localStorage.getItem('authenticated'))
+    },[])
+
+    if(loggedIn){
+        navigate('/loclist')
+    }
+
+    else{
 
     return(
         <> 
@@ -31,4 +41,5 @@ export const Getstarted = () => {
             {/* <Trial /> */}
         </>
     )
+}
 }
