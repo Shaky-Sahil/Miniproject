@@ -9,22 +9,218 @@
 }
 
 .map-cont{
-  height: 30vh;
-  width: 90vw;
-  margin-left: 5vw;
+ 
+  height: 100vh;
+  width: 100vw;
+  /* margin-left: 5vw; */
 }
 
 .exp-map-cont{
+  
   height: 75vh;
   width: 90vw;
   margin-left: 5vw;
 }
 
 .exp{
+  visibility: hidden;
+  position: absolute;
   width: 90vw;
   margin-left: 5vw;
   text-align: center;
-  
+  content: 'expand';
   color: white;
-  background-color: rgb(116, 107, 107);
+  background-color: rgb(0, 0, 0);
+}
+
+.user-btn{
+  font-size: 100%;
+  position: absolute;
+  background-color: rgb(149, 197, 255);
+  margin-top: 15%;
+  margin-left: 5%;
+  padding: 2rem;
+  border: none;
+  border-radius: 10%;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.loc-btn{
+    font-size: 110%;
+    position: absolute;
+    background-color: rgb(149, 197, 255);
+    margin-top: 15%;
+    margin-left: 61.3%;
+    padding: 2rem;
+    border-radius: 10%;
+    cursor:pointer;
+    transition: 0.5s;
+    border: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  margin-top: 10%;
+}
+
+.grid-item {
+  font-size: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 0.5s;
+  margin-right: -15%;
+  padding: 1rem;
+}
+
+/* Custom styling for the directions box */
+.leaflet-routing-container {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  height: 50vh;
+  width:30vw;
+  padding: 10px;
+  overflow: scroll;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+leaflet-routing-container .leaflet-routing-instructions {
+  font-size: 12px;
+}
+/* Custom styling for the instructions list */
+.leaflet-routing-container .leaflet-routing-instructions-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Custom styling for the individual instruction steps */
+.leaflet-routing-container .leaflet-routing-instructions-container li {
+  margin-bottom: 10px;
+}
+
+/* Custom styling for the instruction icons */
+.leaflet-routing-container .leaflet-routing-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+/* Custom styling for the instruction texts */
+.leaflet-routing-container .leaflet-routing-instruction {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Custom styling for the instruction distances */
+.leaflet-routing-container .leaflet-routing-instruction-distance {
+  font-weight: bold;
+}
+
+/* Custom styling for the instruction durations */
+.leaflet-routing-container .leaflet-routing-instruction-duration {
+  color: #ffffff;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  .leaflet-routing-container {
+    padding: 5px;
+  }
+
+  .leaflet-routing-container .leaflet-routing-instructions-container li {
+    margin-bottom: 5px;
+  }
+
+  .leaflet-routing-container .leaflet-routing-instruction {
+    font-size: 12px;
+  }
+
+  .leaflet-routing-container .leaflet-routing-instruction-distance {
+    font-weight: normal;
+  }
+}
+dialog{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 2.5vh;
+  margin-top: 10vh;
+}
+
+
+
+.list{
+  background-color: #000000;
+  position: absolute;
+  height: 430vh;
+}
+
+.lst-item{
+  position: absolute;
+  height: 10vh;
+  width: 8vw;
+  background-color: red;
+  margin: 1vh;
+}
+
+.list-carousel{
+  position: absolute;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -179%;
+  color: white;
+}
+
+.loclist{
+  background-color: black;
+  height: 500vh;
+}
+
+.topnav{
+  position: absolute;
+  width: 20%;
+  margin-top: -2%;
+  margin-bottom: 10%;
+  margin-left: 40.3%;
+}
+
+.list-image1{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.list-image2{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button-map{
+  border: none;
+  margin-right: 3%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 0.5s;
+}
+
+.developers-name{
+  color: white;
+  font-size: 90%;
+  margin-left: 18%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }

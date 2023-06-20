@@ -4,22 +4,37 @@ import { maptiler } from 'pigeon-maps/providers'
 import { Map, Marker, Overlay, ZoomControl } from 'pigeon-maps'
 import axios from 'axios';
 import { RiMapPinUserFill } from 'react-icons/ri';
+import { SiGooglemaps } from 'react-icons/si';
+import home1 from "../images/home3.png"
+import home2 from "../images/home1.jpg"
+import { Link, useNavigate } from "react-router-dom";
+import Bottomnav from './Bottomnav';
+import logo from "../images/logo5.png"
+import walk from "../images/walk.png"
+import { Trial } from './Trial'
+import Slider from 'react-slick';
+import { Topnav } from './Topnav';
 
 function Mapview() {
+
+  const navigate = useNavigate()
   const MAPTILER_ACCESS_TOKEN = 'OZ4HFDYGoEnutXVI68gC'
   const MAP_ID = 'streets'
 
 
 function mapTiler (x, y, z, dpr) {
-  //return `https://api.maptiler.com/maps/${MAP_ID}/256/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?key=${MAPTILER_ACCESS_TOKEN}`
-  //return `https://{s}.basemaps.cartocdn.com/dark_all/${z}/${x}/${y}{r}.png`
-  return `https://tile.jawg.io/jawg-light/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
-  //return `https://tile.jawg.io/5cbaaabc-fad9-4b10-85cc-83a4d9c38c44/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
+  
+  return `https://tile.jawg.io/jawg-dark/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png?access-token=ajZ8uEnlLTe657gFBu6Ma8VqVbTMnFRhwQpMtXd9hAZohgRumwkOkLn5LwtXf5Fx`
+  
 }
 
 const [coordinates,setCoordinates] = useState([8.5241,76.9366])
 const [locations,setLocations] = useState([])
 const [isActive, setIsActive] = useState(false);
+const [dialogOpen, setDialogOpen] = useState(false);
+const [locName, setLocName] = useState('');
+
+
 const screenWidth = window.innerWidth
 const successCallback = (position) => {
   console.log(position);
@@ -52,24 +67,53 @@ const handleExpand = event => {
   setIsActive(current => !current);
 };
 
+const handleMarkerClick = (name) => {
+  setLocName(name)
+  setDialogOpen(true);
+};
+
+const handleDialogClose = () => {
+  setDialogOpen(false);
+};
+
   return (
-    <div className="App">
-      Mini project
-      <div  className={isActive ? 'map-cont' : 'exp-map-cont'}>
-    <Map  className='map'  defaultCenter={[8.5039,76.9511]} provider={mapTiler} defaultZoom={13}>
-      <ZoomControl/>      
+    <>
+    
+    <div >
+      
+      <div  className={isActive ? 'exp-map-cont' : 'map-cont'}>
+    <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
-      <Marker key={i} width={50} color='black' anchor={[l.lat,l.lon]} onClick={()=>{alert(l.placeName)}}/>
-      ))}  
-      <Overlay anchor={coordinates}>
-      <RiMapPinUserFill size={50}/>
+      <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{handleMarkerClick()}}>
+        <SiGooglemaps size={25} onClick={()=>{handleMarkerClick(l.placeName)}} color='white'/>
       </Overlay>
+      ))}  
+       <Overlay anchor={coordinates}>
+      <RiMapPinUserFill size={30} color="orange"/>
+      </Overlay>
+      {dialogOpen && (
+        <dialog open={dialogOpen} onClose={handleDialogClose} onClick={handleDialogClose}>
+          {/* Dialog content */}
+          <h1>{locName}</h1>
+          <p>Content of the dialog goes here.</p>
+          <button className='button-map' onClick={handleDialogClose}>close</button>
+          <button className='button-map'onClick={()=>{navigate('/location')}}>View More</button>
+        </dialog>
+      )}
+     
+     <Topnav/>
       </Map>
     </div>
     <div className='exp' onClick={handleExpand}>
-        Expand
+    {isActive ? 'Minimize' : 'Expand'}
       </div>
     </div>
+    <div className="grid-container">
+    </div>  
+    <Bottomnav/>
+    
+ 
+    </>
   );
 }
 

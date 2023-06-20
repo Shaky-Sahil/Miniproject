@@ -11,6 +11,13 @@ import Userprofile from './components/Userprofile';
 import Location from './components/Location';
 import Mapview from './components/Mapview'
 import { Getstarted } from './components/Getstarted'
+import { Homepage } from './components/Homepage'
+import Routeview from './Routeview'
+import Listlocations from './components/Listlocations'
+import { Topnav } from './components/Topnav'
+import Swiper from './components/Swiper'
+import {Loclist} from './components/Loclist'
+import { Developers } from './components/Developers'
 
 function App() {
 
@@ -18,16 +25,19 @@ function App() {
     <>
  
     <div className='App'> 
-    {/* <Userprofile/> */}
+    {/* < Developers /> */}
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>
-      <Route path='cardone'element={<Cardone/>}></Route>
-      <Route path='/cardtwo'element={<Cardtwo/>}></Route>
-      <Route path='/cardthree'element={<Cardthree/>}></Route>
+      <Route path='homepage'element={<Homepage/>}></Route>
+      <Route path='/mapview'element={<Mapview />}></Route>
       <Route path='/loginform'element={<Loginform />}></Route>
       <Route path='/register'element={<Register />}></Route>
-      <Route path='/mapview'element={<Mapview />}></Route>
+      <Route path='/location'element={<Location />}></Route>
+      <Route path='/list'element={<Listlocations />}></Route>
+      <Route path='/loclist'element={<Loclist />}></Route>
+      <Route path='/userprofile'element={<Userprofile />}></Route>
+      <Route path='/navigate'element={<Routeview/>}></Route>
     </Routes>
   </BrowserRouter> 
     </div>

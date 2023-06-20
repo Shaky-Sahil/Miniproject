@@ -1,8 +1,7 @@
-*{
-    overflow: hidden;
-}
+
 
 .getstarted-css{
+    
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -13,17 +12,44 @@
 
 .get-button{
     margin-top: 700px;
-    padding-right: 45px;
-    padding-left: 45px;
     margin-left: 50px;
     margin-right: 65px;
-    box-shadow: 0 0.188em 1.00em rgb(255, 255, 255);
 }
 
 .starting-image{
     position: absolute;
-    margin-top: -75px;
+    margin-top: 3%;
+    margin-left: 60%;
     height: 200px;
     width: 200px;
     
+    
 }
+
+.embark{
+    box-shadow: 0 0 3em rgb(0, 179, 255);
+    padding-right: 45px;
+    padding-left: 45px;
+    border: none;
+    padding-top: 5%;
+    padding-bottom:  5%;
+    background-color: white;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-left: 57%;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.start-bg{
+        position: absolute;
+        width: 100%;
+        margin-top: -37.7%;
+        background-color: black;
+        padding-top: 70%;
+}
+
+

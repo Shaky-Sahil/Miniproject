@@ -1,0 +1,23 @@
+
+
+.song{
+    position: absolute;
+    color: white;
+    margin-top: 2%;
+    margin-left: 80%;
+}
+.song2{
+    position: absolute;
+    color: white;
+    margin-top: 1.8%;
+    margin-left: 90%;
+}
+
+.play{
+    
+    width: 43%;
+}
+
+.pause{
+    width: 90%;
+}

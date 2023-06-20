@@ -1,11 +1,12 @@
 import React, { useState } from "react"
-import videoBg from '../images/videoBg.mp4'
 import "./Register.css"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
+import trees1 from "../images/trees1.png"
+import login from "../images/login.png"
 export const Register = () => {
    
     
@@ -15,11 +16,11 @@ export const Register = () => {
         const handleSignup = (data) => {
             axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/signup',data).then((response)=>{
               console.log(response)
-              navigate("/Loginform");
+              navigate("/loginform");
             }).catch(()=>{
                 toast.error('Invalid Data');
                 console.log("something went wrong")
-                navigate("/Register")
+                navigate("/register")
 
         })
     
@@ -40,10 +41,9 @@ export const Register = () => {
 
     return(
         <>
+        <img className="user-bg" src={trees1}></img>
         <div className="register">
-            {/* <div className="video-class">
-                <video src={videoBg} autoPlay loop muted /></div> */}
-                <div style={myStyle1}></div>
+        {/* <img className="register-bg" src={login}></img> */}
                 <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>
@@ -64,6 +64,7 @@ export const Register = () => {
                     </Link>
                 </div>
         </div>
+        <Toaster/>
         </>
     )
 }
