@@ -19,9 +19,10 @@ import ponmudi from '../images/ponmudi.jpg'
 import neyyar from '../images/neyyar.jpg'
 import kovalam from '../images/kovalam.jpg'
 import { DropdownMenu } from './DropdownMenu';
+import { useNavigate } from "react-router-dom";
 
 const Userprofile = () => {
-    
+  const navigate = useNavigate()
     const [userProfile, setUserProfile] = useState({
         name: 'John Doe',
         username: 'johndoe',
@@ -105,11 +106,11 @@ const Userprofile = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}></SwiperSlide>
       </Swiper>
       </div>
       

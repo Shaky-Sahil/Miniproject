@@ -3,7 +3,7 @@ import "./Getstarted.css"
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo4.png"
 import trees1 from "../images/trees1.png"
-import { Trial } from './Trial'
+
 
 export const Getstarted = () => {
     const navigate = useNavigate()

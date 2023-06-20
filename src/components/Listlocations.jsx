@@ -5,8 +5,6 @@ import '../App.css'
 import { useNavigate } from 'react-router'
 import Bottomnav from './Bottomnav'
 import { Topnav } from './Topnav';
-import home1 from "../images/home3.png"
-import home2 from "../images/home1.jpg"
 
 const Listlocations = () => {
     const [locations,setLocations] = useState([])
@@ -21,11 +19,7 @@ const Listlocations = () => {
 
   return (
     <>
-
     <div className='listbg'>
-      
-      <img className="list-image2" src={home2}></img>
-      <img className="list-image1" src={home1}></img>
       <div className='list'>
       <Topnav/>
         <h1 style={{color:'white', fontSize:20, marginTop:120, marginBottom:5, marginLeft:15}}>Locations You Can Visit:</h1>

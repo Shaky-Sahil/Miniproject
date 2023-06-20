@@ -8,7 +8,6 @@ import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form"
 import trees1 from "../images/trees1.png"
-import { Trial } from './Trial'
 
 export const Loginform = () => {
   const {register, handleSubmit} = useForm()
