@@ -3,6 +3,8 @@ import React from 'react'
 import { AiFillHome } from 'react-icons/ai';
 import { FaUserAlt } from 'react-icons/fa';
 import { BiCurrentLocation } from 'react-icons/bi';
+import { BsMapFill } from 'react-icons/bs';
+
 
 import { useNavigate } from 'react-router-dom';
 
@@ -16,11 +18,13 @@ const Bottomnav = () => {
 >
   <BottomNavigationAction label="Home" icon={<AiFillHome color='white'/>} onClick={()=>{navigate('/loclist')}}
   sx={{color:'white'}}/>
-  <BottomNavigationAction label="locations" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/mapview')}}
+  <BottomNavigationAction label="Locations" icon={<BiCurrentLocation color='white'/>} onClick={()=>{navigate('/list')}}
+  sx={{color:'white'}}/>
+  <BottomNavigationAction label="Map" icon={<BsMapFill color='white'/>} onClick={()=>{navigate('/mapview')}}
   sx={{color:'white'}}/>
   <BottomNavigationAction label="Profile" icon={<FaUserAlt color='white'/>} onClick={()=>{navigate('/userprofile')}}
   sx={{color:'white'}}/>
-</BottomNavigation>
+  </BottomNavigation>
     </div>
   )
 }
