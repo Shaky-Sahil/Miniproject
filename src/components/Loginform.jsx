@@ -1,4 +1,4 @@
-import React, { Component, useState, useForm,useEffect } from "react"
+import React, { Component, useState, useEffect } from "react"
 import "./Loginform.css"
 import { Text } from "./Text"
 import a1 from "../images/logo2.png"
@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form"
 
 export const Loginform = () => {
-  const {register, handleSubmit} = useForm()
-  const navigate = useNavigate()
+  const {register, handleSubmit} = useForm();
+  const navigate = useNavigate();
   const [authenticated, setauthenticated] = useState(null)
 
   useEffect(()=>{
@@ -19,11 +20,11 @@ export const Loginform = () => {
 },[])
 
   const handleLogin = (data) => {
-    axios.post('http://localhost:6901/login',data).then((response)=>{
-      console.log(response.data.user.isAdmin)
+    axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/login',data).then((response)=>{
+      console.log(response.data.usesAdminr.i)
       localStorage.setItem("authenticated", true);
       localStorage.setItem("token",response.data.token)
-      localStorage.setItem("isAdmin",response.data.user.isAdmin)
+      
       
         
         navigate("/")
@@ -58,7 +59,7 @@ export const Loginform = () => {
             <div  className="auth">
                 {/* <img className="loginlogo" src={a1}></img> */}
                 <h2 className="loginTitle">LOGIN</h2>
-                <form className="login-form" onSubmit={handleSubmit}>
+                <form className="login-form">
                     <label htmlFor="email">Email:</label>
                     <input  type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>

@@ -1,10 +1,11 @@
-import React, { useState,useForm } from "react"
+import React, { useState } from "react"
 import videoBg from '../images/videoBg.mp4'
 import "./Register.css"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
+import { useForm } from "react-hook-form";
 export const Register = () => {
    
     
@@ -12,13 +13,13 @@ export const Register = () => {
         const {register, handleSubmit} = useForm()
         const navigate = useNavigate()
         const handleSignup = (data) => {
-            axios.post('http://localhost:6901/users',data).then((response)=>{
+            axios.post('https://dull-cyan-marlin-kit.cyclic.app/api/signup',data).then((response)=>{
               console.log(response)
-              navigate("/Login");
+              navigate("/Loginform");
             }).catch(()=>{
                 toast.error('Invalid Data');
                 console.log("something went wrong")
-                navigate("/Signup")
+                navigate("/Register")
 
         })
     
@@ -46,7 +47,7 @@ export const Register = () => {
                 <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>
-                        <label>Full Name:</label>
+                        <label>Name:</label>
                         <input  name="name" id="name" placeholder="Full Name"  {...register('userName')}/>
                         <label htmlFor="email">Email:</label>
                         <input type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />
