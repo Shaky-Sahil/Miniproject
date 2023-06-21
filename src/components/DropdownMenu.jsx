@@ -17,7 +17,9 @@ export const DropdownMenu = () =>{
                    
                     <button className="settings-hover"onClick={()=>{navigate('/homepage')}}>About Us</button>
                     <button className="settings-hover"onClick={()=>{navigate('/settings')}}>Settings</button>
-                    <button className="settings-hover"onClick={()=>{navigate('/loginform')}}>Log Out</button>
+                    <button className="settings-hover"onClick={()=>{
+                        localStorage.removeItem('authenticated')
+                        navigate('/homepage')}}>Log Out</button>
                 </div>
             }
         </div>
