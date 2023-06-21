@@ -10,8 +10,8 @@ import { useForm } from "react-hook-form"
 import trees1 from "../images/trees1.png"
 
 export const Loginform = () => {
-  const {register, handleSubmit} = useForm()
-  const navigate = useNavigate()
+  const {register, handleSubmit} = useForm();
+  const navigate = useNavigate();
   const [authenticated, setauthenticated] = useState(null)
 
   useEffect(()=>{
@@ -59,7 +59,7 @@ export const Loginform = () => {
             <div  className="auth">
                 {/* <img className="loginlogo" src={a1}></img> */}
                 <h2 className="loginTitle">LOGIN</h2>
-                <form className="login-form" onSubmit={handleSubmit}>
+                <form className="login-form">
                     <label htmlFor="email">Email:</label>
                     <input  type="email" placeholder="youremail@gmail.com" id="email" name="userEmail" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>
