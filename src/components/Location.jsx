@@ -19,7 +19,7 @@ const Location = () => {
   const {state} = useLocation();
   const currentLocation = state.currentLocation
   useEffect(()=>{
-    axios.get('http://localhost:5000/images',{ params: { name: currentLocation.placeName } }).then((res)=>{
+    axios.get('https://dull-cyan-marlin-kit.cyclic.app/images',{ params: { name: currentLocation.placeName } }).then((res)=>{
      setImages(res.data)
     }
     )
