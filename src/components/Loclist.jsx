@@ -95,7 +95,7 @@ return (
                 </div>
             ))}
         </Slider>
-        <h1 style={{fontSize:19, marginTop:55, marginLeft:0.5}}>Based on category:</h1>
+        <h1 style={{fontSize:19, marginTop:55, marginLeft:0.5}}>Browse by category:</h1>
         <Swiper
         modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={80}
@@ -119,16 +119,16 @@ return (
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
         >
-            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
-            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
-            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
-            <SwiperSlide onClick={()=>{navigate('/location')}}><img style={{width:140, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:'Kovalam Beach'}} })}}><img style={{width:140, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:'Ponmudi'}} })}}><img style={{width:140, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:'Jatayu'}}})}}><img style={{width:140, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
+            <SwiperSlide onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:'Neyyar Dam'}} })}}><img style={{width:140, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
             <SwiperSlide onClick={()=>{navigate('/location')}}></SwiperSlide>
         </Swiper>
         <h1 style={{fontSize:19, marginTop:40, marginBottom:15}}>Trivandrum's Finest</h1>
         <Slider {...setting}>
             {image.map((image, index) => (
-                <div key={index} onClick={()=>{navigate('/location')}}>
+                <div key={index} onClick={()=>{navigate('/list')}}>
                 <img className="hi" src={image} />
                 </div>
             ))}
