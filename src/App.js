@@ -25,7 +25,7 @@ function App() {
     <>
  
     <div className='App'> 
-    {/* < Developers /> */}
+    {/* < Getstarted /> */}
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>

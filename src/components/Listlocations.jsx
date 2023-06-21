@@ -5,8 +5,6 @@ import '../App.css'
 import { useNavigate } from 'react-router'
 import Bottomnav from './Bottomnav'
 import { Topnav } from './Topnav';
-import home1 from "../images/home3.png"
-import home2 from "../images/home1.jpg"
 
 const Listlocations = () => {
     const [locations,setLocations] = useState([])
@@ -21,18 +19,14 @@ const Listlocations = () => {
 
   return (
     <>
-
     <div className='listbg'>
-      
-      <img className="list-image2" src={home2}></img>
-      <img className="list-image1" src={home1}></img>
       <div className='list'>
       <Topnav/>
-        <h1 style={{color:'white', fontSize:40, marginTop:90, marginBottom:5, marginLeft:12}}>Locations You Can Visit:</h1>
+        <h1 style={{color:'white', fontSize:20, marginTop:120, marginBottom:5, marginLeft:15}}>Locations You Can Visit:</h1>
         <Grid container>
           {locations.map((l,i)=>(
             <Grid item xs={12} key={i}>
-              <Card sx={{bgcolor: 'white',borderRadius:4,margin:1,width:394,color:'black'}} onClick={()=>{navigate('/location')}}>
+              <Card sx={{bgcolor: 'white',height:100,borderRadius:4,margin:1,width:394,color:'black', textAlign:'center', justifyContent:'center', alignItems:'center', display:'flex'}} onClick={()=>{navigate('/location')}}>
                 <CardContent>
                   {l.placeName}<br/>
                     type:{l.placeCategory}

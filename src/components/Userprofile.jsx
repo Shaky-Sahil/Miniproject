@@ -18,9 +18,11 @@ import jatayu from '../images/jatayu.jpg'
 import ponmudi from '../images/ponmudi.jpg'
 import neyyar from '../images/neyyar.jpg'
 import kovalam from '../images/kovalam.jpg'
+import { DropdownMenu } from './DropdownMenu';
+import { useNavigate } from "react-router-dom";
 
 const Userprofile = () => {
-    
+  const navigate = useNavigate()
     const [userProfile, setUserProfile] = useState({
         name: 'John Doe',
         username: 'johndoe',
@@ -48,30 +50,40 @@ const Userprofile = () => {
     
       return (  
         <>
-        
+          <DropdownMenu/>
            <img className="userbg1" src={home2}></img>
-          <img className="userbg2" src={home1}></img>
+          {/* <img className="userbg2" src={home1}></img> */}
+          
           <img className="userpage-image" src={logo}></img>
           <img className="profile-image" src={profile}></img>
+          
           <Bottomnav/>
+          
           <div className="profile-screen">
+            
             <div className="profile-content">
+              
               <h1 className='profile'>Profile</h1>
+              
                 <div className="profile-details">
                   <div className="profile-picture">
                     <div className="profile-picture-container" onClick={handlePictureClick}>
+                
                       <img src={userProfile.profilePicUrl} alt="" />
                     </div>
                     <input type="file" accept="image/*" ref={fileInputRef} onChange={handlePictureChange} style={{ display: 'none' }} />
                   </div>
                 </div>
+                
                 <div>
+                  
                     <h1 className="name">{userProfile.name}</h1>
                     <h2 className="user-name">@{userProfile.username}</h2>
                     {/* <h2 className="emailid">Email: {userProfile.email}</h2> */}
                   </div>
             </div>
           </div>
+          
           <div className='xplored'>
           <h1 className="visited-num">15</h1>
           <h1 className="remain-num">25</h1>
@@ -81,6 +93,7 @@ const Userprofile = () => {
           <Link style={{textDecoration:"none", color:"Black"}}to="/mapview">
           <button className="more-loc">GET YOUR NEXT WILD JOURNEY</button>
           </Link>
+          
           </div>
           <div className='user-swiper'>
            
@@ -93,13 +106,15 @@ const Userprofile = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
-        <SwiperSlide><img style={{width:150, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={ponmudi} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={kovalam} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}><img style={{width:150, borderRadius:1}} src={jatayu} alt='slide'></img></SwiperSlide>
+        <SwiperSlide  onClick={()=>{navigate('/list')}}></SwiperSlide>
       </Swiper>
       </div>
+      
+      
         </>
       );
 }

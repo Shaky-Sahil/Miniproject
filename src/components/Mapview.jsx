@@ -10,8 +10,6 @@ import home2 from "../images/home1.jpg"
 import { Link, useNavigate } from "react-router-dom";
 import Bottomnav from './Bottomnav';
 import logo from "../images/logo5.png"
-import walk from "../images/walk.png"
-import { Trial } from './Trial'
 import Slider from 'react-slick';
 import { Topnav } from './Topnav';
 
