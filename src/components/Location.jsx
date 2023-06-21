@@ -71,7 +71,6 @@ const Location = () => {
             <h2 style={{textAlign:'left'}}>Kuravankonam, Trivandrum</h2>
           </div> */}
           <div >
-            <span className="star">&#9733;&#9733;&#9733;&#9733;</span>
             {/* <p className='rating'>4.2</p>
             <h2 className='rating-text'>Excellent</h2> */}
             <div style={{textAlign:'left'}}>
