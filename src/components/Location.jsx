@@ -13,6 +13,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import standrews from '../images/standrews.jpg'
 import kudumbu from '../images/kudumbu.jpg'
 import axios from 'axios';
+import PreLoader from './PreLoader';
 
 const Location = () => {
   const [images,setImages] = useState();
@@ -49,6 +50,7 @@ const Location = () => {
       if(images){
       return (
         <>
+        <PreLoader />
          <img className="loc2-bg" src={home2}></img>
           <img className="loc3-bg" src={home1}></img> 
          
@@ -74,7 +76,7 @@ const Location = () => {
             {/* <p className='rating'>4.2</p>
             <h2 className='rating-text'>Excellent</h2> */}
             <div style={{textAlign:'left'}}>
-              <h4 >OVERVIEW :</h4>
+              <h4 style={{marginTop:60}}>OVERVIEW :</h4>
               <div className='btnclass'>
               <button className="btn" onClick={()=>{navigate('/navigate',{state:{destination:currentLocation}})}}>GET DIRECTIONS</button>
               </div>

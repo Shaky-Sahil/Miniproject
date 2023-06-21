@@ -162,8 +162,8 @@ dialog{
 .list{
   background-color: #000000;
   position: absolute;
-  height: 500vh;
-  
+  height: 450vh;
+  max-width: 100%;
 }
 
 .lst-item{

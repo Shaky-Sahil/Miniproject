@@ -32,6 +32,7 @@ import finest2 from "../images/finest2.jpg"
 import finest3 from "../images/finest3.jpg"
 import './Loclist.css'
 import { Developers } from './Developers';
+import PreLoader from './PreLoader';
 
 export const Loclist = () => {
     
@@ -76,6 +77,7 @@ const images = [
 
 return (
 <>
+    <PreLoader />
     <div className='loclist-1'>
         <div> 
         <img className="loclist-image-11" src={home2}></img>

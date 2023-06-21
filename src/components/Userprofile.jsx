@@ -20,6 +20,7 @@ import neyyar from '../images/neyyar.jpg'
 import kovalam from '../images/kovalam.jpg'
 import { DropdownMenu } from './DropdownMenu';
 import { useNavigate } from "react-router-dom";
+import PreLoader from './PreLoader';
 
 const Userprofile = () => {
   const navigate = useNavigate()
@@ -50,11 +51,12 @@ const Userprofile = () => {
     
       return (  
         <>
+        <PreLoader />
           <DropdownMenu/>
            <img className="userbg1" src={home2}></img>
           {/* <img className="userbg2" src={home1}></img> */}
           
-          <img className="userpage-image" src={logo}></img>
+          {/* <img className="userpage-image" src={logo} onClick={()=>{navigate('/loclist')}}></img> */}
           <img className="profile-image" src={profile}></img>
           
           <Bottomnav/>

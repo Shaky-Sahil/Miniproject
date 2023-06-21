@@ -5,6 +5,7 @@ import '../App.css'
 import { useNavigate } from 'react-router'
 import Bottomnav from './Bottomnav'
 import { Topnav } from './Topnav';
+import PreLoader from './PreLoader'
 
 const Listlocations = () => {
     const [locations,setLocations] = useState([])
@@ -19,14 +20,14 @@ const Listlocations = () => {
 
   return (
     <>
-    <div className='listbg'>
+    <PreLoader />
       <div className='list'>
       <Topnav/>
-        <h1 style={{color:'white', fontSize:20, marginTop:120, marginBottom:5, marginLeft:15}}>Locations You Can Visit:</h1>
+        <h1 style={{color:'white', fontSize:20,paddingRight:185, marginTop:120, marginBottom:5, marginLeft:15}}>Locations You Can Visit:</h1>
         <Grid container>
           {locations.map((l,i)=>(
             <Grid item xs={12} key={i}>
-              <Card sx={{bgcolor: 'white',height:100,
+              <Card sx={{bgcolor: 'white',height:80,
               borderRadius:4,margin:1,width:394,color:'black', 
               textAlign:'center', justifyContent:'center', alignItems:'center', display:'flex'}} 
               onClick={()=>{navigate('/location',{ state: { currentLocation:l } })}}>
@@ -40,7 +41,7 @@ const Listlocations = () => {
         </Grid>
         <Bottomnav/>
         </div>
-    </div>
+    
     </>
   )
 }

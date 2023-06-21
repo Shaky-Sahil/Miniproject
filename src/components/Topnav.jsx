@@ -7,6 +7,6 @@ export const Topnav = () =>{
     const navigate = useNavigate()
 
     return(
-        <img className="topnav" src={logo} onClick={()=>{navigate('/mapview')}}></img>
+        <img className="topnav" src={logo} onClick={()=>{navigate('/loclist')}}></img>
     )
 }
