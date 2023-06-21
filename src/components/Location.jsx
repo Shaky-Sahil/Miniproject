@@ -50,7 +50,7 @@ const Location = () => {
       if(images){
       return (
         <>
-        <PreLoader />
+        {/* <PreLoader /> */}
          <img className="loc2-bg" src={home2}></img>
           <img className="loc3-bg" src={home1}></img> 
          

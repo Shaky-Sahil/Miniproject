@@ -51,7 +51,7 @@ const Userprofile = () => {
     
       return (  
         <>
-        <PreLoader />
+        {/* <PreLoader /> */}
           <DropdownMenu/>
            <img className="userbg1" src={home2}></img>
           {/* <img className="userbg2" src={home1}></img> */}

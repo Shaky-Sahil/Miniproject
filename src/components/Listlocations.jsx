@@ -20,7 +20,7 @@ const Listlocations = () => {
 
   return (
     <>
-    <PreLoader />
+    {/* <PreLoader /> */}
       <div className='list'>
       <Topnav/>
         <h1 style={{color:'white', fontSize:20,paddingRight:185, marginTop:120, marginBottom:5, marginLeft:15}}>Locations You Can Visit:</h1>
