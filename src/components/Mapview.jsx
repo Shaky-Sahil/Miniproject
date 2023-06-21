@@ -93,9 +93,11 @@ const handleDialogClose = () => {
         <dialog open={dialogOpen} onClose={handleDialogClose} onClick={handleDialogClose}>
           {/* Dialog content */}
           <h1>{locName}</h1>
-          <p>Content of the dialog goes here.</p>
+          <p></p>
           <button className='button-map' onClick={handleDialogClose}>close</button>
-          <button className='button-map'onClick={()=>{navigate('/location')}}>View More</button>
+          <button className='button-map'onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:locName}} })
+        
+        }}>View More</button>
         </dialog>
       )}
      
