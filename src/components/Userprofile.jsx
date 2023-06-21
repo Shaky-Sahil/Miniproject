@@ -56,7 +56,7 @@ const Userprofile = () => {
            <img className="userbg1" src={home2}></img>
           {/* <img className="userbg2" src={home1}></img> */}
           
-          {/* <img className="userpage-image" src={logo} onClick={()=>{navigate('/loclist')}}></img> */}
+          <img className="userpage-image" src={logo} onClick={()=>{navigate('/loclist')}}></img>
           <img className="profile-image" src={profile}></img>
           
           <Bottomnav/>
