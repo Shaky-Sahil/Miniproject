@@ -47,7 +47,7 @@ export const Register = () => {
                 <div  className="auth">
                     <h2 className="registerTitle">REGISTER</h2>
                     <form className="register-form" onSubmit={handleSubmit}>
-                        <label>Full Name:</label>
+                        <label>Name:</label>
                         <input  name="name" id="name" placeholder="Full Name"  {...register('userName')}/>
                         <label htmlFor="email">Email:</label>
                         <input type="email" placeholder="youremail@gmail.com" id="email" name="email" {...register('userEmail')} />

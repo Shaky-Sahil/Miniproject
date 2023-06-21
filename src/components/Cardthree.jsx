@@ -32,12 +32,9 @@ export const Cardthree = () => {
                 Make the most of this opportunity. We have over 30+ SAFE Locations that you can visit.
                 </p>
                 <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
-                    <button className="button1">Next</button>
+                    <button className="button1">Finish</button>
                     </Link>
-                    <Link style={{textDecoration:"none", color:"Black"}}to="/loginform">
-                <button className="button2">Skip</button>
-                </Link>
-                
+                    
             </div>
             </div>
             </div>

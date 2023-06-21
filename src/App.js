@@ -18,6 +18,7 @@ import { Topnav } from './components/Topnav'
 import Swiper from './components/Swiper'
 import {Loclist} from './components/Loclist'
 import { Developers } from './components/Developers'
+import SettingsPage from './components/SettingsPage'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <>
  
     <div className='App'> 
+
     {/* < Getstarted /> */}
     <BrowserRouter>
     <Routes>
@@ -38,6 +40,8 @@ function App() {
       <Route path='/loclist'element={<Loclist />}></Route>
       <Route path='/userprofile'element={<Userprofile />}></Route>
       <Route path='/navigate'element={<Routeview/>}></Route>
+      <Route path='/settings'element={<SettingsPage/>}></Route>
+
     </Routes>
   </BrowserRouter> 
     </div>
