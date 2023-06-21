@@ -136,7 +136,6 @@ return (
         
         <h1 style={{fontSize:19, marginTop:35}}>View All Locations</h1>
         <button className='loclist-btn' onClick={()=>{navigate('/list')}}>Click Here</button>
-        <Developers />
         <Bottomnav/>
         </div>
     </div>

@@ -15,7 +15,6 @@ export const DropdownMenu = () =>{
                 open &&
                 <div className="settings-list">
                     <button className="settings-hover">Settings</button>
-                    <button className="settings-hover"onClick={()=>{navigate('/homepage')}}>About Us</button>
                     <button className="settings-hover"onClick={()=>{navigate('/loginform')}}>Log Out</button>
                 </div>
             }
