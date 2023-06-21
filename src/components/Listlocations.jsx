@@ -26,7 +26,10 @@ const Listlocations = () => {
         <Grid container>
           {locations.map((l,i)=>(
             <Grid item xs={12} key={i}>
-              <Card sx={{bgcolor: 'white',height:50,borderRadius:4,margin:1,width:394,color:'black', textAlign:'center', justifyContent:'center', alignItems:'center', display:'flex'}} onClick={()=>{navigate('/location')}}>
+              <Card sx={{bgcolor: 'white',height:100,
+              borderRadius:4,margin:1,width:394,color:'black', 
+              textAlign:'center', justifyContent:'center', alignItems:'center', display:'flex'}} 
+              onClick={()=>{navigate('/location',{ state: { currentLocation:l } })}}>
                 <CardContent>
                   {l.placeName}<br/>
                     type:{l.placeCategory}
