@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -12,14 +12,19 @@ import home2 from "../images/home1.jpg"
 import { useLocation, useNavigate } from 'react-router-dom';
 import standrews from '../images/standrews.jpg'
 import kudumbu from '../images/kudumbu.jpg'
+import axios from 'axios';
 
 const Location = () => {
+  const [images,setImages] = useState();
   const {state} = useLocation();
   const currentLocation = state.currentLocation
+  useEffect(()=>{
+    axios.get('http://localhost:5000/images',{ params: { name: currentLocation.placeName } }).then((res)=>{
+     setImages(res.data)
+    }
+    )
+  },[])
   const navigate = useNavigate();
-    const images = [
-        standrews,kudumbu
-      ];
     
       const settings = {
         dots: true,
@@ -41,7 +46,7 @@ const Location = () => {
     //     backgroundSize: 'cover',
         
     // };
-    
+      if(images){
       return (
         <>
          <img className="loc2-bg" src={home2}></img>
@@ -54,9 +59,10 @@ const Location = () => {
             <Slider {...settings}>
                 {images.map((image, index) => (
                   <div key={index}>
-                    <img className="hi" src={image} />
+                    <img className="hi" src={image.image_url} />
                   </div>
                 ))}
+                {/* <img className="hi" src={'https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2018/01/6-priyadarsini_planetarium_.jpg'} /> */}
             </Slider>
           <div className='header1'>
             <h1 style={{textAlign:'left'}}>{currentLocation.placeName}</h1>
@@ -71,7 +77,7 @@ const Location = () => {
             <div style={{textAlign:'left'}}>
               <h4 >OVERVIEW :</h4>
               <div className='btnclass'>
-              <button className="btn" onClick={()=>{navigate('/navigate')}}>GET DIRECTIONS</button>
+              <button className="btn" onClick={()=>{navigate('/navigate',{state:{destination:currentLocation}})}}>GET DIRECTIONS</button>
               </div>
             </div>   
           </div>
@@ -90,7 +96,13 @@ const Location = () => {
        <Bottomnav/>
         </>
       );
-    
+          }
+
+      else{
+        return(
+          <>no data</>
+        )
+      }
 }
 
 export default Location
