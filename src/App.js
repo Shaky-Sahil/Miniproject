@@ -19,7 +19,7 @@ import Swiper from './components/Swiper'
 import {Loclist} from './components/Loclist'
 import { Developers } from './components/Developers'
 import SettingsPage from './components/SettingsPage'
-
+import Test  from './components/Test'
 function App() {
 
   return (
@@ -27,7 +27,7 @@ function App() {
  
     <div className='App'> 
 
-    {/* < Getstarted /> */}
+    {/* < Test /> */}
     <BrowserRouter>
     <Routes>
       <Route path='/'element={<Getstarted/>}></Route>

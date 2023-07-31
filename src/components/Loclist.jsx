@@ -77,30 +77,32 @@ const images = [
 
 return (
 <>
-    <PreLoader />
-    <div className='loclist-1'>
+
+    {/* <PreLoader /> */}
+    <div className='w-full h-screen bg-black'>
         <div> 
-        <img className="loclist-image-11" src={home2}></img>
+            <img className="absolute object-cover w-[100%] h-[130%]" src={home2}></img>
 
             {/* <img className="loclist-image-1" src={home2}></img> */}
 
             {/* <img className="loclist-image-2" src={home1}></img> */}
         </div>
         <Topnav/>
-        <div className='loclist-carousel-1'>
+        <div className='absolute items-center w-full h-screen text-white flex flex-col'>
         
-        <h1 style={{fontSize:19, marginTop:30,marginLeft:1}}>XPLR FAVORTIES</h1>  
-        <Slider {...settings}>
+            <h1 className='md:mt-[8%] mt-[22%]'>XPLR FAVORTIES:</h1>  
+            <Slider className='md:w-[25%] mt-3 w-[95%]' {...settings}>
             {images.map((image, index) => (
-                <div key={index} onClick={()=>{navigate('/list')}}>
-                <img className="hi" src={image} />
-                </div>
+            <div key={index} onClick={()=>{navigate('/list')}}>
+                <img className="" src={image} />
+            </div>
             ))}
         </Slider>
-        <h1 style={{fontSize:19, marginTop:55, marginLeft:0.5}}>Browse by category:</h1>
+        <h1 className="mt-4" style={{fontSize:19}}>Browse by category:</h1>
         <Swiper
+        className='mt-4 absolute md:w-[25%] md:h-[15%] w-[100%] h-[16%]'
         modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={80}
+        spaceBetween={20}
         slidesPerView={3}
         scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
@@ -112,10 +114,12 @@ return (
             <SwiperSlide onClick={()=>{navigate('/list')}}><img style={{width:140, borderRadius:1}} src={category4} alt='slide'></img></SwiperSlide>
             <SwiperSlide></SwiperSlide>
         </Swiper>
-        <h1 style={{fontSize:19, marginTop:25}}>Locations for you</h1>
+                
+        <h1 className="mt-10" style={{fontSize:19}}>Locations for you</h1>
         <Swiper
+        className='mt-4 md:w-[25%] md:h-[105%] w-[100%] h-[16%]'
         modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={80}
+        spaceBetween={20}
         slidesPerView={3}
         scrollbar={{ draggable: true }}
         onSlideChange={() => console.log('slide change')}
@@ -127,18 +131,20 @@ return (
             <SwiperSlide onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:'Neyyar Dam'}} })}}><img style={{width:140, borderRadius:1}} src={neyyar} alt='slide'></img></SwiperSlide>
             <SwiperSlide onClick={()=>{navigate('/location')}}></SwiperSlide>
         </Swiper>
-        <h1 style={{fontSize:19, marginTop:40, marginBottom:15}}>Trivandrum's Finest</h1>
-        <Slider {...setting}>
+        <Swiper><Bottomnav/></Swiper>
+
+        
+        <h1 className="mt-10" style={{fontSize:19}}>Trivandrum's Finest</h1>
+        <Slider className='mt-4 md:w-[25%] md:h-[15%] w-[100%] h-[16%]' {...setting}>
             {image.map((image, index) => (
                 <div key={index} onClick={()=>{navigate('/list')}}>
-                <img className="hi" src={image} />
+                <img className="" src={image} />
                 </div>
             ))}
         </Slider>
-        
-        <h1 style={{fontSize:19, marginTop:35}}>View All Locations</h1>
-        <button className='loclist-btn' onClick={()=>{navigate('/list')}}>Click Here</button>
-        <Bottomnav/>
+    
+        <h1 className="mt-[25%] md:mt-[7%]" style={{fontSize:19}}>View All Locations</h1>
+        <button className='mt-[2%] pt-3 pb-3 pr-[40%] pl-[40%] md:pt-3 md:pd-3 md:pl-[10%] md:pr-[10%] cursor-pointer rounded-2xl bg-white transition duration-10 ease-in-out text-black' onClick={()=>{navigate('/list')}}>Click Here</button>
         </div>
     </div>
 </>

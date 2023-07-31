@@ -36,11 +36,8 @@
     background-color: white;
     border-radius: 10px;
     cursor:pointer;
-    margin-left: 57%;
+    
     transition: 0.5s;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     text-align: center;
 }
 

@@ -54,17 +54,17 @@ export const Loginform = () => {
 
     return(
     <> 
-        <div className="login">
-        <img className="user-bg" src={trees1}></img>
-            <div  className="auth">
+        <div className="absolute w-full h-screen text-white flex items-center justify-center">
+        <img className="w-full h-screen object-cover absolute" src={trees1}></img>
+            <div  className="absolute auth mb-8 p-10 border rounded-2xl flex items-center justify-center flex-col">
                 {/* <img className="loginlogo" src={a1}></img> */}
-                <h2 className="loginTitle">LOGIN</h2>
-                <form className="login-form">
+                <h2 className="pt-3 mb-[-15%] mt-10 text-[130%]">LOGIN</h2>
+                <form className="flex flex-col p-3 pt-[30%]">
                     <label htmlFor="email">Email:</label>
-                    <input  type="email" placeholder="youremail@gmail.com" id="email" name="userEmail" {...register('userEmail')} />
+                    <input className="text-black" type="email" placeholder="youremail@gmail.com" id="email" name="userEmail" {...register('userEmail')} />
                     <label htmlFor="password">Password:</label>
-                    <input  type="password" placeholder="Password" id="password" name="userPassword" {...register('userPassword')} />
-                    <button className="button-universal" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
+                    <input  type="password" className="text-black" placeholder="Password" id="password" name="userPassword" {...register('userPassword')} />
+                    <button className="p-3 cursor-pointer rounded-2xl bg-white transition duration-10 ease-in-out text-black" href="/login-submit" type="submmit" onClick={handleSubmit(handleLogin)}>Login</button>
                 </form> 
                 <button className="link" onClick={()=>{navigate('/register')}}>Sign UP</button>
                 <Text />

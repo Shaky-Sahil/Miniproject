@@ -1,55 +1,5 @@
-
-.Homepage{
-    text-align: center;
-    background-color: black;
-    height: 100vh;
-    color: white;
-    display: grid;
-    place-content: center;
-    
-    
-}
-
-.Home-logo{
-    
-    width: 20vw;
-    margin-top: 20px;
-
-}
-
-.welcome-head{
-    text-align: center;
-    margin-top: 100%;
-    font-size: 95%;
-}
-
-
 .xplr-header{
-    font-size: 260%;
-    margin-top: 81%;
-    margin-left: 1%;
     text-shadow: 0 0 1.00em rgb(0, 247, 255); ;
-    
-}
-
-.welcome-para{
-    font-size: 80%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: -0.6vh;
-}
-
-.trees1{
-    width: 100%;
-    margin-top: 100%;
-
-}
-
-.birds{
-  
-    margin-top: 100%;
-    margin-right: -40%;
-    width: 50%;
 }
 
 .mountain{
@@ -72,10 +22,7 @@
 }
 
 .xplr-header-2{
-    font-size: 170%;
-    margin-top: -90%;
     text-shadow: 0 0em 1.00em rgb(0, 255, 13); ;
-    
 }
 
 .tourist{

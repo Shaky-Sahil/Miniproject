@@ -7,6 +7,8 @@ export const Topnav = () =>{
     const navigate = useNavigate()
 
     return(
-        <img className="topnav" src={logo} onClick={()=>{navigate('/loclist')}}></img>
+        <div className="absolute w-full flex justify-center">
+        <img className="md:w-[5%] w-[15%]" src={logo} onClick={()=>{navigate('/loclist')}}></img>
+        </div>
     )
 }

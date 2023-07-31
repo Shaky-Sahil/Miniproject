@@ -17,11 +17,7 @@
   }  
 
   .auth{
-    position: absolute;
-    padding: 5rem;
-    border-radius: 10px;
     box-shadow: 0 0.188em 1.00em rgb(185, 214, 165);
-    
   }
 
   label {

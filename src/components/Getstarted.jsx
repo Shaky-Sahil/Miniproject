@@ -26,19 +26,14 @@ export const Getstarted = () => {
 
     return(
         <> 
-         <img className="start-bg" src={trees1}></img>
-        <div className="getstarted-css" >
-        <img className="starting-image" src={logo}></img>
-       
-                <h1 className="getstarted-css">
-                     
-                </h1>
-                <div className="get-button">
-               
-                        <button className="embark" onClick={()=>navigate('/homepage')}>EMBARK</button>
-                </div>
+         <img className="absolute w-full h-screen flex object-cover" src={trees1}></img>
+        <div className="absolute w-full h-screen flex items-center justify-center" >
+            <img className="sm:w-[35%] md:w-[40%] lg:w-[15%] mb-[5%] absolute " src={logo}></img>
+            <div className="">
+                <button className="embark mt-[390%]" onClick={()=>navigate('/homepage')}>EMBARK</button>
             </div>
-            {/* <Trial /> */}
+        </div>
+        {/* <Trial /> */}
         </>
     )
 }
