@@ -102,7 +102,7 @@ const Location = () => {
 
       else{
         return(
-          <>no data</>
+          <></>
         )
       }
 }
