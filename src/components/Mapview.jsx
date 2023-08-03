@@ -65,8 +65,8 @@ const handleExpand = event => {
   setIsActive(current => !current);
 };
 
-const handleMarkerClick = (name) => {
-  setLocName(name)
+const handleMarkerClick = (loc) => {
+  setLocName(loc)
   setDialogOpen(true);
 };
 
@@ -83,7 +83,7 @@ const handleDialogClose = () => {
     <Map  className='map'  center={coordinates} provider={mapTiler} defaultZoom={12} zoomSnap={false} animate={true}>
       {locations.map((l,i)=>(
       <Overlay key={i} width={50} color='rainbow' anchor={[l.lat,l.lon]} onClick={()=>{handleMarkerClick()}}>
-        <SiGooglemaps size={25} onClick={()=>{handleMarkerClick(l.placeName)}} color='white'/>
+        <SiGooglemaps size={25} onClick={()=>{handleMarkerClick(l)}} color='white'/>
       </Overlay>
       ))}  
        <Overlay anchor={coordinates}>
@@ -92,11 +92,10 @@ const handleDialogClose = () => {
       {dialogOpen && (
         <dialog open={dialogOpen} onClose={handleDialogClose} onClick={handleDialogClose}>
           {/* Dialog content */}
-          <h1>{locName}</h1>
+          <h1>{locName.placeName}</h1>
           <p></p>
           <button className='button-map' onClick={handleDialogClose}>close</button>
-          <button className='button-map'onClick={()=>{navigate('/location',{ state: { currentLocation:{placeName:locName}} })
-        
+          <button className='button-map'onClick={()=>{navigate('/location',{ state: { currentLocation:locName} })
         }}>View More</button>
         </dialog>
       )}

@@ -9,8 +9,8 @@ const Routeview = () => {
   const {state} = useLocation();
   const [coordinates,setCoordinates] = useState([8.5241,76.9366])
   const successCallback = (position) => {
-    console.log(position);
-    console.log(`coords are : ${position.coords.latitude}, ${position.coords.longitude}`)
+    // console.log(position);
+    // console.log(`coords are : ${position.coords.latitude}, ${position.coords.longitude}`)
     setCoordinates([position.coords.latitude,position.coords.longitude])
     
   };
